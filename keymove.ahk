@@ -15,10 +15,11 @@ CapsLock & `;::Send, {blind}{Delete}
 
 ; Other
 CapsLock & f::Send, {blind}{Esc}
-CapsLock & u::Send, {blind}{AppsKey}
+CapsLock & o::Send, {blind}{AppsKey}
 
 CapsLock & q::Send, {blind}^{w} ; close tab in Chrome and VS2017 (custom bind)
-CapsLock & y::Send, {blind}^{Tab} ; Ctrl+Tab - switch window
+CapsLock & u::Send, {blind}^!{Tab} ; Ctrl+Alt+Tab - switch window
+CapsLock & y::Send, {blind}!{y} ; Alt+y - switch tabs
 
 
 ; VS2019 shortcuts
@@ -29,7 +30,7 @@ CapsLock & r::Send, {blind}^{p} ; Ctrl-P - launch Go To Member
 CapsLock & g::Send, {blind}^{g} ; Ctrl-G - Go to line
 CapsLock & =::Send, {blind}!+{=} ; Alt-Shift-= - Expand selection
 CapsLock & -::Send, {blind}!+{-} ; Alt-Shift-- - Shrink selection
-CapsLock & b::Send, {blind}^+{l} ; Ctrl-Shift-L - Delete Line
+CapsLock & n::Send, {blind}^+{l} ; Ctrl-Shift-L - Delete Line
 
 ; Copy-Paste replace
 CapsLock & v:: Send, {blind}^{v}
