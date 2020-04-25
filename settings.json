@@ -1,9 +1,0 @@
-{
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Visual Studio Light",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.activityBar.visible": true,
-    "editor.fontSize": 16,
-    "terminal.integrated.fontSize": 16,
-    "diffEditor.ignoreTrimWhitespace": true,
-}
