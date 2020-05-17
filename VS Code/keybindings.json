@@ -13,12 +13,21 @@
         "command": "workbench.action.quickOpen"
     },
     {
+        "key": "alt+y",
+        "command": "workbench.action.quickOpen"
+    },
+    {
         "key": "ctrl+e",
         "command": "-workbench.action.quickOpen"
     },
     {
         "key": "ctrl+p",
         "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "shift+alt+=",
+        "command": "editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
     },
     {
         "key": "alt+w",
