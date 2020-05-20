@@ -3,7 +3,33 @@
     "workbench.colorTheme": "Visual Studio Light",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.activityBar.visible": true,
-    "editor.fontSize": 16,
-    "terminal.integrated.fontSize": 16,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#fffee5dc",
+        "editor.lineHighlightBorder": "#a8aeaf1e"
+    },
+
+
     "diffEditor.ignoreTrimWhitespace": true,
+    "editor.fontSize": 16,
+    "editor.minimap.enabled": true,
+    "editor.renderControlCharacters": true,
+
+    "files.exclude": {
+        "**/.vscode": true,
+        "**/bin": true,
+        "**/obj": true
+    },
+
+    "python.jediEnabled": false,
+    "python.pythonPath": "%localappdata%\\Programs\\Python\\Python37-32\\python.exe",
+
+    "breadcrumbs.enabled": false,
+    "bracket-pair-colorizer-2.showBracketsInRuler": true,
+    "terminal.integrated.fontSize": 16,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
 }
