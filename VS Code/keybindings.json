@@ -13,10 +13,6 @@
         "command": "workbench.action.quickOpen"
     },
     {
-        "key": "alt+y",
-        "command": "workbench.action.quickOpen"
-    },
-    {
         "key": "ctrl+e",
         "command": "-workbench.action.quickOpen"
     },
@@ -100,5 +96,9 @@
         "key": "ctrl+shift+[",
         "command": "-editor.fold",
         "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "alt+y",
+        "command": "workbench.action.quickOpenPreviousEditor"
     },
 ]
