@@ -33,7 +33,7 @@ CapsLock & -::Send, {blind}!+{-} ; Alt-Shift-- - Shrink selection
 CapsLock & n::Send, {blind}^+{l} ; Ctrl-Shift-L - Delete Line
 
 ; Copy-Paste replace
-CapsLock & v:: Send, {blind}^{v}
+CapsLock & v:: Send, {blind}{LWin down}{v}{LWin up}
 CapsLock & c:: Send, {blind}^{c}
 CapsLock & x:: Send, {blind}^{x}
 
