@@ -15,7 +15,7 @@ CapsLock & `;::Send, {blind}{Delete}
 
 ; Other
 CapsLock & f::Send, {blind}{Esc}
-CapsLock & o::Send, {blind}{AppsKey}
+CapsLock & o::Send, {blind}!{Left}
 
 CapsLock & q::Send, {blind}^{w} ; close tab in Chrome and VS2017 (custom bind)
 CapsLock & u::Send, {blind}^!{Tab} ; Ctrl+Alt+Tab - switch window
@@ -24,13 +24,16 @@ CapsLock & y::Send, {blind}!{y} ; Alt+y - switch tabs
 
 ; VS2019 shortcuts
 CapsLock & m::Send, {blind}^{F12} ; Ctrl+F12 - goto implementation
-CapsLock & e::Send, {blind}!w ; Alt+W - select word
+;CapsLock & e::Send, {blind}!w ; Alt+W - select word
+<!w::Send ^{Left}+^{Right} ; More general Alt+W
 CapsLock & t::Send, {blind}^{t} ; Ctrl-T - launch Go To File
 CapsLock & r::Send, {blind}^{p} ; Ctrl-P - launch Go To Member
 CapsLock & g::Send, {blind}^{g} ; Ctrl-G - Go to line
 CapsLock & =::Send, {blind}!+{=} ; Alt-Shift-= - Expand selection
 CapsLock & -::Send, {blind}!+{-} ; Alt-Shift-- - Shrink selection
 CapsLock & n::Send, {blind}^+{l} ; Ctrl-Shift-L - Delete Line
+CapsLock & [::Send, {blind}!+{[} ; Alt-Shift-[ - Go to head of block
+
 
 ; Copy-Paste replace
 CapsLock & v:: Send, {blind}{LWin down}{v}{LWin up}
