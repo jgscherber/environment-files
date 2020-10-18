@@ -1,42 +1,39 @@
 SetCapsLockState, AlwaysOff
 
-CapsLock & j::Send, {blind}{Left}
-CapsLock & k::Send, {blind}{Down}
-CapsLock & l::Send, {blind}{Right}
-CapsLock & i::Send, {blind}{Up}
+#if GetKeyState("CapsLock", "P")
+    ; Move Keys
+    *j::send, {blind}{Left}
+    *l::Send, {blind}{Right}
+    *k::Send, {blind}{Down}
+    *i::Send, {blind}{Up}
+    *w::Send, {blind}{PgUp}
+    *d::Send, {blind}{End}
+    *s::Send, {blind}{PgDn}
+    *a::Send, {blind}{Home}
 
-CapsLock & w::Send, {blind}{PgUp}
-CapsLock & d::Send, {blind}{End}
-CapsLock & s::Send, {blind}{PgDn}
-CapsLock & a::Send, {blind}{Home}
+    ; Delete Keys
+    *h::Send, {blind}{Backspace}
+    *`;::Send, {blind}{Delete}
 
-CapsLock & h::Send, {blind}{Backspace}
-CapsLock & `;::Send, {blind}{Delete}
+    ; Other
+    *f::Send, {blind}{Esc}
+    *o::Send, {blind}{AppsKey}
+    *q::Send, {blind}^{w} ; close tab in Chrome and VS2017 (custom bind)
+    *u::Send, {blind}{RCtrl down}{RAlt down}{Tab}{RAlt up}{RCtrl up} ; Ctrl+Alt+Tab - switch window
+    *y::Send, {blind}!{y} ; Alt+y - switch tabs
 
-; Other
-CapsLock & f::Send, {blind}{Esc}
-CapsLock & o::Send, {blind}{AppsKey}
+    ; VS2019 shortcuts
+    *m::Send, {blind}^{F12} ; Ctrl+F12 - goto implementation
+    *e::Send, {blind}!w ; Alt+W - select word
+    *t::Send, {blind}^{t} ; Ctrl-T - launch Go To File
+    *r::Send, {blind}^{p} ; Ctrl-P - launch Go To Member
+    *g::Send, {blind}^{g} ; Ctrl-G - Go to line
+    *=::Send, {blind}!+{=} ; Alt-Shift-= - Expand selection
+    *-::Send, {blind}!+{-} ; Alt-Shift-- - Shrink selection
+    *n::Send, {blind}^+{l} ; Ctrl-Shift-L - Delete Line
 
-CapsLock & q::Send, {blind}^{w} ; close tab in Chrome and VS2017 (custom bind)
-CapsLock & u::Send, {blind}^!{Tab} ; Ctrl+Alt+Tab - switch window
-CapsLock & y::Send, {blind}!{y} ; Alt+y - switch tabs
-
-
-; VS2019 shortcuts
-CapsLock & m::Send, {blind}^{F12} ; Ctrl+F12 - goto implementation
-CapsLock & e::Send, {blind}!w ; Alt+W - select word
-CapsLock & t::Send, {blind}^{t} ; Ctrl-T - launch Go To File
-CapsLock & r::Send, {blind}^{p} ; Ctrl-P - launch Go To Member
-CapsLock & g::Send, {blind}^{g} ; Ctrl-G - Go to line
-CapsLock & =::Send, {blind}!+{=} ; Alt-Shift-= - Expand selection
-CapsLock & -::Send, {blind}!+{-} ; Alt-Shift-- - Shrink selection
-CapsLock & n::Send, {blind}^+{l} ; Ctrl-Shift-L - Delete Line
-
-; Copy-Paste replace
-CapsLock & v:: Send, {blind}^{v}
-CapsLock & c:: Send, {blind}^{c}
-CapsLock & x:: Send, {blind}^{x}
-
-
-; CapsLock & u::Send, {blind}{Click, %A_CaretX%, %A_CaretY%, 2}
-; CapsLock & o::Send, {blind}{Click, %A_CaretX%, %A_CaretY%, 3}
+    ; Copy-Paste replace
+    *v:: Send, {blind}^{v}
+    *c:: Send, {blind}^{c}
+    *x:: Send, {blind}^{x}
+#if
