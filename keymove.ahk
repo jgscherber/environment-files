@@ -17,23 +17,25 @@ SetCapsLockState, AlwaysOff
 
     ; Other
     *f::Send, {blind}{Esc}
-    *o::Send, {blind}{AppsKey}
+    *o::Send, {blind}!{Left}
     *q::Send, {blind}^{w} ; close tab in Chrome and VS2017 (custom bind)
     *u::Send, {blind}{RCtrl down}{RAlt down}{Tab}{RAlt up}{RCtrl up} ; Ctrl+Alt+Tab - switch window
     *y::Send, {blind}!{y} ; Alt+y - switch tabs
 
     ; VS2019 shortcuts
     *m::Send, {blind}^{F12} ; Ctrl+F12 - goto implementation
-    *e::Send, {blind}!w ; Alt+W - select word
+    ;*e::Send, {blind}!w ; Alt+W - select word
+    *<!w::Send ^{Left}+^{Right} ; More general Alt+W
     *t::Send, {blind}^{t} ; Ctrl-T - launch Go To File
     *r::Send, {blind}^{p} ; Ctrl-P - launch Go To Member
     *g::Send, {blind}^{g} ; Ctrl-G - Go to line
     *=::Send, {blind}!+{=} ; Alt-Shift-= - Expand selection
     *-::Send, {blind}!+{-} ; Alt-Shift-- - Shrink selection
     *n::Send, {blind}^+{l} ; Ctrl-Shift-L - Delete Line
+    *[::Send, {blind}!+{[} ; Alt-Shift-[ - Go to head of block
 
     ; Copy-Paste replace
-    *v:: Send, {blind}^{v}
+    *v:: Send, {blind}{LWin down}{v}{LWin up}
     *c:: Send, {blind}^{c}
     *x:: Send, {blind}^{x}
 #if
