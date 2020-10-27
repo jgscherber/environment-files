@@ -1,5 +1,7 @@
 SetCapsLockState, AlwaysOff
 
+<!w::Send ^{Left}+^{Right} ; More general Alt+W
+
 #if GetKeyState("CapsLock", "P")
     ; Move Keys
     *j::send, {blind}{Left}
@@ -24,9 +26,8 @@ SetCapsLockState, AlwaysOff
 
     ; VS2019 shortcuts
     *m::Send, {blind}^{F12} ; Ctrl+F12 - goto implementation
-    ;*e::Send, {blind}!w ; Alt+W - select word
-    *<!w::Send ^{Left}+^{Right} ; More general Alt+W
     *t::Send, {blind}^{t} ; Ctrl-T - launch Go To File
+    ;*e::Send, {blind} ; AVAILABLE COMBO
     *r::Send, {blind}^{p} ; Ctrl-P - launch Go To Member
     *g::Send, {blind}^{g} ; Ctrl-G - Go to line
     *=::Send, {blind}!+{=} ; Alt-Shift-= - Expand selection
