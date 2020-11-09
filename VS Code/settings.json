@@ -1,35 +1,58 @@
 {
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.colorTheme": "Quiet Light",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.activityBar.visible": true,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.colorCustomizations": {
         "editor.lineHighlightBackground": "#fffee5dc",
-        "editor.lineHighlightBorder": "#a8aeaf1e"
+        "editor.lineHighlightBorder": "#a8aeaf1e",
+        "editor.background": "#ffffff",
+        "activityBar.background": "#333333",
+        "activityBar.foreground": "#eeffff"
     },
 
-
+    "breadcrumbs.enabled": true,
     "diffEditor.ignoreTrimWhitespace": true,
-    "editor.fontSize": 16,
     "editor.minimap.enabled": true,
     "editor.renderControlCharacters": true,
+    "editor.detectIndentation": false,
+    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "editor.fontLigatures": false,
+    "terminal.integrated.fontSize": 13,
 
     "files.exclude": {
         "**/.vscode": true,
         "**/bin": true,
+        "**/node_modules": true,
         "**/obj": true
     },
 
     "python.jediEnabled": false,
     "python.pythonPath": "%localappdata%\\Programs\\Python\\Python37-32\\python.exe",
+    "python.showStartPage": false,
+    "python.languageServer": "Microsoft",
 
-    "breadcrumbs.enabled": false,
-    "bracket-pair-colorizer-2.showBracketsInRuler": true,
-    "terminal.integrated.fontSize": 16,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+
+    "omnisharp.enableImportCompletion": true,
+    "omnisharp.enableRoslynAnalyzers": true,
+    "csharp.referencesCodeLens.enabled": false,
+    "csharp.semanticHighlighting.enabled": true,
+    "csharpextensions.privateMemberPrefix": "_",
+
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
-    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
 }
