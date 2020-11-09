@@ -1,6 +1,6 @@
 SetCapsLockState, AlwaysOff
 
-<!w::Send ^{Left}+^{Right} ; More general Alt+W
+!w::Send ^{Left}+^{Right} ; More general Alt+W
 
 #if GetKeyState("CapsLock", "P")
     ; Move Keys
