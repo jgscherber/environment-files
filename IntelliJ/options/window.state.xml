@@ -1,0 +1,43 @@
+<application>
+  <component name="DimensionService">
+    <location key="find.popup.0.0.1368.769" x="391" y="33" />
+    <location key="find.popup.0.0.1920.1080" x="549" y="34" />
+    <size key="GridCell.Tab.0.left.0.0.1366.768" width="1323" height="182" />
+    <size key="GridCell.Tab.0.center.0.0.1366.768" width="1323" height="182" />
+    <size key="GridCell.Tab.0.right.0.0.1366.768" width="1323" height="182" />
+    <size key="GridCell.Tab.0.bottom.0.0.1366.768" width="1323" height="182" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080" width="1877" height="284" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080" width="1877" height="284" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080" width="1877" height="284" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080" width="1877" height="284" />
+    <size key="find.popup.0.0.1368.769" width="710" height="732" />
+    <size key="GridCell.Tab.0.left.0.0.1368.769" width="1325" height="182" />
+    <size key="GridCell.Tab.0.center.0.0.1368.769" width="1325" height="182" />
+    <size key="GridCell.Tab.0.right.0.0.1368.769" width="1325" height="182" />
+    <size key="GridCell.Tab.0.bottom.0.0.1368.769" width="1325" height="182" />
+    <size key="find.popup.0.0.1920.1080" width="997" height="1041" />
+  </component>
+  <component name="WindowManager">
+    <frame x="-8" y="22" width="1040" height="586" extendedState="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="WindowStateApplicationService">
+    <state x="500" y="30" width="600" height="324" key="RegExHelpPopup" timestamp="1608062887895">
+      <screen x="0" y="30" width="1368" height="739" />
+    </state>
+    <state x="500" y="30" width="600" height="324" key="RegExHelpPopup/0.30.1368.739" timestamp="1608062887895" />
+  </component>
+</application>
