@@ -1,5 +1,6 @@
 {
     "workbench.startupEditor": "newUntitledFile",
+    "workbench.sideBar.location": "right",
     "workbench.colorTheme": "Quiet Light",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.activityBar.visible": true,
@@ -11,6 +12,9 @@
         "activityBar.background": "#333333",
         "activityBar.foreground": "#eeffff"
     },
+
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
 
     "breadcrumbs.enabled": true,
     "diffEditor.ignoreTrimWhitespace": true,
