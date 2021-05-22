@@ -1,152 +1,143 @@
 {
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "Quiet Light",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.activityBar.visible": true,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.colorCustomizations": {
-        "terminal.background": "#fdfafd",
-        "editor.lineHighlightBackground": "#fffee5dc",
-        "editor.lineHighlightBorder": "#a8aeaf1e",
-        "editor.background": "#ffffff",
-        "activityBar.background": "#333333",
-        "activityBar.foreground": "#eeffff",
-        "editorGutter.background": "#f2f2f2",
-        "editorGroupHeader.noTabsBackground": "#f2f2f2"
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
-
-    "git.autofetch": true,
-    "git.enableSmartCommit": true,
-
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
     "breadcrumbs.enabled": true,
+    "csharp.referencesCodeLens.enabled": false,
+    "csharp.semanticHighlighting.enabled": true,
+    "csharpextensions.privateMemberPrefix": "_",
     "diffEditor.ignoreTrimWhitespace": true,
-    "terminal.integrated.fontSize": 13,
-
-    "editor.minimap.enabled": true,
-    "editor.renderControlCharacters": true,
     "editor.detectIndentation": false,
     "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
-    "editor.fontSize": 13,
     "editor.fontLigatures": false,
+    "editor.fontSize": 13,
+    "editor.minimap.enabled": true,
+    "editor.renderControlCharacters": true,
     "editor.tokenColorCustomizations": {
-        "types": "#0d7d00",
         "comments": "#008000",
-        "strings": "#a2a2a2",
         "functions": "#a80000",
-        "variables": "#333333",
         "keywords": "#5454ff",
+        "strings": "#a2a2a2",
+        "types": "#0d7d00",
+        "variables": "#333333"
     },
-    
     "files.exclude": {
         "**/.vscode": true,
         "**/bin": true,
         "**/node_modules": true,
         "**/obj": true
     },
-
-    "python.pythonPath": "%localappdata%\\Programs\\Python\\Python37-32\\python.exe",
-    "python.showStartPage": false,
-    "python.languageServer": "Microsoft",
-
-    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
-    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
-
-    "omnisharp.enableImportCompletion": true,
-    "omnisharp.enableRoslynAnalyzers": true,
-    "csharp.referencesCodeLens.enabled": false,
-    "csharp.semanticHighlighting.enabled": true,
-    "csharpextensions.privateMemberPrefix": "_",
-
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
-    "window.zoomLevel": 0,
-    "mssql.connections": [
-        {
-            "server": "{{put-server-name-here}}",
-            "database": "{{put-database-name-here}}",
-            "user": "{{put-username-here}}",
-            "password": "{{put-password-here}}"
-        }
-    ],
-    "todo-tree.tree.showScanModeButton": false,
     "highlight.regexes": {
-        "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
-            "filterFileRegex": ".*(?<!CHANGELOG.md)$",
-            "decorations": [
-                {
-                    "overviewRulerColor": "#ffcc00",
-                    "backgroundColor": "#ffcc00",
-                    "color": "#1f1f1f",
-                    "fontWeight": "bold"
-                },
-                {
-                    "backgroundColor": "#ffcc00",
-                    "color": "#1f1f1f"
-                }
-            ]
-        },
         "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
-            "filterFileRegex": ".*(?<!CHANGELOG.md)$",
             "decorations": [
                 {
-                    "overviewRulerColor": "#cc0000",
                     "backgroundColor": "#cc0000",
                     "color": "#1f1f1f",
-                    "fontWeight": "bold"
+                    "fontWeight": "bold",
+                    "overviewRulerColor": "#cc0000"
                 },
                 {
                     "backgroundColor": "#cc0000",
                     "color": "#1f1f1f"
                 }
-            ]
-        },
-        "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
-            "filterFileRegex": ".*(?<!CHANGELOG.md)$",
-            "decorations": [
-                {
-                    "overviewRulerColor": "#00ccff",
-                    "backgroundColor": "#00ccff",
-                    "color": "#1f1f1f",
-                    "fontWeight": "bold"
-                },
-                {
-                    "backgroundColor": "#00ccff",
-                    "color": "#1f1f1f"
-                }
-            ]
+            ],
+            "filterFileRegex": ".*(?<!CHANGELOG.md)$"
         },
         "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:IDEA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
-            "filterFileRegex": ".*(?<!CHANGELOG.md)$",
             "decorations": [
                 {
-                    "overviewRulerColor": "#cc00cc",
                     "backgroundColor": "#cc00cc",
                     "color": "#1f1f1f",
-                    "fontWeight": "bold"
+                    "fontWeight": "bold",
+                    "overviewRulerColor": "#cc00cc"
                 },
                 {
                     "backgroundColor": "#cc00cc",
                     "color": "#1f1f1f"
                 }
-            ]
+            ],
+            "filterFileRegex": ".*(?<!CHANGELOG.md)$"
+        },
+        "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+            "decorations": [
+                {
+                    "backgroundColor": "#00ccff",
+                    "color": "#1f1f1f",
+                    "fontWeight": "bold",
+                    "overviewRulerColor": "#00ccff"
+                },
+                {
+                    "backgroundColor": "#00ccff",
+                    "color": "#1f1f1f"
+                }
+            ],
+            "filterFileRegex": ".*(?<!CHANGELOG.md)$"
+        },
+        "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+            "decorations": [
+                {
+                    "backgroundColor": "#ffcc00",
+                    "color": "#1f1f1f",
+                    "fontWeight": "bold",
+                    "overviewRulerColor": "#ffcc00"
+                },
+                {
+                    "backgroundColor": "#ffcc00",
+                    "color": "#1f1f1f"
+                }
+            ],
+            "filterFileRegex": ".*(?<!CHANGELOG.md)$"
         }
     },
-    "git.enableSmartCommit": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "mssql.connections": [
+        {
+            "database": "{{put-database-name-here}}",
+            "password": "{{put-password-here}}",
+            "server": "{{put-server-name-here}}",
+            "user": "{{put-username-here}}"
+        }
+    ],
+    "omnisharp.enableImportCompletion": true,
+    "omnisharp.enableRoslynAnalyzers": true,
+    "python.languageServer": "Microsoft",
+    "python.pythonPath": "%localappdata%\\Programs\\Python\\Python37-32\\python.exe",
+    "python.showStartPage": false,
     "terminal.integrated.cursorBlinking": true,
-    "workbench.editor.untitled.hint": "hidden",
+    "terminal.integrated.fontSize": 13,
+    "todo-tree.tree.showScanModeButton": false,
+    "window.zoomLevel": 0,
+    "workbench.activityBar.visible": true,
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#333333",
+        "activityBar.foreground": "#eeffff",
+        "editor.background": "#ffffff",
+        "editor.lineHighlightBackground": "#fffee5dc",
+        "editor.lineHighlightBorder": "#a8aeaf1e",
+        "editorGroupHeader.border": "#333333",
+        "editorGroupHeader.noTabsBackground": "#f2f2f2",
+        "editorGutter.background": "#f2f2f2",
+        "terminal.background": "#fdfafd"
+    },
+    "workbench.colorTheme": "Quiet Light",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.showTabs": false,
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile"
 }
