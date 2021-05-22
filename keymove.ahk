@@ -34,9 +34,16 @@ SetCapsLockState, AlwaysOff
     *-::Send, {blind}!+{-} ; Alt-Shift-- - Shrink selection
     *n::Send, {blind}^+{l} ; Ctrl-Shift-L - Delete Line
     *[::Send, {blind}!+{[} ; Alt-Shift-[ - Go to head of block
+    *p::Send, {blind}!+{p} ; Alt-Shift-p - Toggle Pin tab
 
     ; Copy-Paste replace
     *v:: Send, {blind}{LWin down}{v}{LWin up}
     *c:: Send, {blind}^{c}
     *x:: Send, {blind}^{x}
+
+    ; Mouse mode
+    *b::
+        Run "keymouse.ahk" ; needs to be in same directory
+        ExitApp
+    return
 #if

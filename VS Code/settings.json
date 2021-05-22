@@ -6,11 +6,14 @@
     "workbench.activityBar.visible": true,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.colorCustomizations": {
+        "terminal.background": "#fdfafd",
         "editor.lineHighlightBackground": "#fffee5dc",
         "editor.lineHighlightBorder": "#a8aeaf1e",
         "editor.background": "#ffffff",
         "activityBar.background": "#333333",
-        "activityBar.foreground": "#eeffff"
+        "activityBar.foreground": "#eeffff",
+        "editorGutter.background": "#f2f2f2",
+        "editorGroupHeader.noTabsBackground": "#f2f2f2"
     },
 
     "git.autofetch": true,
@@ -18,14 +21,23 @@
 
     "breadcrumbs.enabled": true,
     "diffEditor.ignoreTrimWhitespace": true,
+    "terminal.integrated.fontSize": 13,
+
     "editor.minimap.enabled": true,
     "editor.renderControlCharacters": true,
     "editor.detectIndentation": false,
     "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
     "editor.fontSize": 13,
     "editor.fontLigatures": false,
-    "terminal.integrated.fontSize": 13,
-
+    "editor.tokenColorCustomizations": {
+        "types": "#0d7d00",
+        "comments": "#008000",
+        "strings": "#a2a2a2",
+        "functions": "#a80000",
+        "variables": "#333333",
+        "keywords": "#5454ff",
+    },
+    
     "files.exclude": {
         "**/.vscode": true,
         "**/bin": true,
@@ -33,7 +45,6 @@
         "**/obj": true
     },
 
-    "python.jediEnabled": false,
     "python.pythonPath": "%localappdata%\\Programs\\Python\\Python37-32\\python.exe",
     "python.showStartPage": false,
     "python.languageServer": "Microsoft",
@@ -59,4 +70,83 @@
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "window.zoomLevel": 0,
+    "mssql.connections": [
+        {
+            "server": "{{put-server-name-here}}",
+            "database": "{{put-database-name-here}}",
+            "user": "{{put-username-here}}",
+            "password": "{{put-password-here}}"
+        }
+    ],
+    "todo-tree.tree.showScanModeButton": false,
+    "highlight.regexes": {
+        "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *TODO(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+            "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+            "decorations": [
+                {
+                    "overviewRulerColor": "#ffcc00",
+                    "backgroundColor": "#ffcc00",
+                    "color": "#1f1f1f",
+                    "fontWeight": "bold"
+                },
+                {
+                    "backgroundColor": "#ffcc00",
+                    "color": "#1f1f1f"
+                }
+            ]
+        },
+        "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+            "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+            "decorations": [
+                {
+                    "overviewRulerColor": "#cc0000",
+                    "backgroundColor": "#cc0000",
+                    "color": "#1f1f1f",
+                    "fontWeight": "bold"
+                },
+                {
+                    "backgroundColor": "#cc0000",
+                    "color": "#1f1f1f"
+                }
+            ]
+        },
+        "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:REVIEW|OPTIMIZE|TSC)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+            "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+            "decorations": [
+                {
+                    "overviewRulerColor": "#00ccff",
+                    "backgroundColor": "#00ccff",
+                    "color": "#1f1f1f",
+                    "fontWeight": "bold"
+                },
+                {
+                    "backgroundColor": "#00ccff",
+                    "color": "#1f1f1f"
+                }
+            ]
+        },
+        "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:IDEA)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
+            "filterFileRegex": ".*(?<!CHANGELOG.md)$",
+            "decorations": [
+                {
+                    "overviewRulerColor": "#cc00cc",
+                    "backgroundColor": "#cc00cc",
+                    "color": "#1f1f1f",
+                    "fontWeight": "bold"
+                },
+                {
+                    "backgroundColor": "#cc00cc",
+                    "color": "#1f1f1f"
+                }
+            ]
+        }
+    },
+    "git.enableSmartCommit": true,
+    "terminal.integrated.cursorBlinking": true,
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.editor.showTabs": false,
 }
