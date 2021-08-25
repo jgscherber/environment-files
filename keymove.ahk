@@ -38,8 +38,8 @@ SetCapsLockState, AlwaysOff
 
     ; Copy-Paste replace
     *v:: Send, {blind}{LWin down}{v}{LWin up}
-    *c:: Send, {blind}^{c}
-    *x:: Send, {blind}^{x}
+    *z:: Send, {blind}^!{f} ; Ctrl-Alt-F - launch everything search
+	
 
     ; Mouse mode
     *b::

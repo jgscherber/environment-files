@@ -11,6 +11,9 @@
     "[typescriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
+    "[xml]": {
+        "editor.defaultFormatter": "DotJoshJohnson.xml"
+    },
     "breadcrumbs.enabled": true,
     "csharp.referencesCodeLens.enabled": false,
     "csharp.semanticHighlighting.enabled": true,
@@ -30,6 +33,7 @@
         "types": "#0d7d00",
         "variables": "#333333"
     },
+    "explorer.openEditors.sortOrder": "alphabetical",
     "files.exclude": {
         "**/.vscode": true,
         "**/bin": true,
@@ -113,14 +117,20 @@
             "user": "{{put-username-here}}"
         }
     ],
+    "nxunitExplorer.nunit": "C:\\Apex\\Workspaces\\Apex_Dev\\3rdParty\\NUnit\\2.5.3",
     "omnisharp.enableImportCompletion": true,
     "omnisharp.enableRoslynAnalyzers": true,
     "python.languageServer": "Microsoft",
     "python.pythonPath": "%localappdata%\\Programs\\Python\\Python37-32\\python.exe",
     "python.showStartPage": false,
+    "redhat.telemetry.enabled": false,
     "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.fontSize": 13,
+    "todo-tree.filtering.useBuiltInExcludes": "file and search excludes",
+    "todo-tree.tree.scanAtStartup": false,
     "todo-tree.tree.showScanModeButton": false,
+    "window.restoreWindows": "none",
     "window.zoomLevel": 0,
     "workbench.activityBar.visible": true,
     "workbench.colorCustomizations": {
@@ -136,8 +146,9 @@
     },
     "workbench.colorTheme": "Quiet Light",
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.editor.showTabs": false,
+    "workbench.editor.restoreViewState": false,
     "workbench.editor.untitled.hint": "hidden",
+    "workbench.editor.wrapTabs": true,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile"
 }
