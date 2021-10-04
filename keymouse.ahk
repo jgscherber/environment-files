@@ -1,6 +1,10 @@
 SetDefaultMouseSpeed, 0 
 SetCapsLockState, AlwaysOff
 
+; **** I think the key here is to separate the press from the hold
+; **** So a tap moves the cursor X pixels up, while holding it moves it slowly to allow precision
+; https://autohotkey.com/board/topic/41435-differentiate-between-pressing-and-holding-key/
+
 ; SETTINGS
 ; --------
 ; futz with these to get the movement as you'd like it
