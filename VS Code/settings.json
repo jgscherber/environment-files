@@ -40,6 +40,7 @@
         "**/node_modules": true,
         "**/obj": true
     },
+    "files.hotExit": "off",
     "git.autofetch": true,
     "git.enableSmartCommit": true,
     "gitlens.codeLens.enabled": false,
@@ -120,6 +121,7 @@
     "nxunitExplorer.nunit": "C:\\Apex\\Workspaces\\Apex_Dev\\3rdParty\\NUnit\\2.5.3",
     "omnisharp.enableImportCompletion": true,
     "omnisharp.enableRoslynAnalyzers": true,
+    "python.defaultInterpreterPath": "%localappdata%\\Programs\\Python\\Python37-32\\python.exe",
     "python.languageServer": "Microsoft",
     "python.pythonPath": "%localappdata%\\Programs\\Python\\Python37-32\\python.exe",
     "python.showStartPage": false,

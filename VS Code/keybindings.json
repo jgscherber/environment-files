@@ -1,144 +1,144 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
     {
-        "key": "ctrl+p",
-        "command": "workbench.action.showAllSymbols"
+        "command": "workbench.action.showAllSymbols",
+        "key": "ctrl+p"
     },
     {
-        "key": "ctrl+t",
-        "command": "-workbench.action.showAllSymbols"
+        "command": "-workbench.action.showAllSymbols",
+        "key": "ctrl+t"
     },
     {
-        "key": "ctrl+t",
-        "command": "workbench.action.quickOpen"
+        "command": "workbench.action.quickOpen",
+        "key": "ctrl+t"
     },
     {
-        "key": "ctrl+e",
-        "command": "-workbench.action.quickOpen"
+        "command": "-workbench.action.quickOpen",
+        "key": "ctrl+e"
     },
     {
-        "key": "ctrl+p",
-        "command": "-workbench.action.quickOpen"
+        "command": "-workbench.action.quickOpen",
+        "key": "ctrl+p"
     },
     {
+        "command": "editor.action.smartSelect.expand",
         "key": "shift+alt+=",
-        "command": "editor.action.smartSelect.expand",
         "when": "editorTextFocus"
     },
     {
+        "command": "editor.action.smartSelect.expand",
         "key": "alt+w",
-        "command": "editor.action.smartSelect.expand",
         "when": "editorTextFocus"
     },
     {
-        "key": "shift+alt+right",
         "command": "-editor.action.smartSelect.expand",
+        "key": "shift+alt+right",
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+enter",
         "command": "editor.action.quickFix",
+        "key": "alt+enter",
         "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+.",
         "command": "-editor.action.quickFix",
+        "key": "ctrl+.",
         "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
     },
     {
-        "key": "f1",
-        "command": "workbench.action.openDocumentationUrl"
+        "command": "workbench.action.openDocumentationUrl",
+        "key": "f1"
     },
     {
-        "key": "ctrl+d",
-        "command": "editor.action.duplicateSelection"
+        "command": "editor.action.duplicateSelection",
+        "key": "ctrl+d"
     },
     {
-        "key": "ctrl+shift+q",
-        "command": "workbench.action.closeAllEditors"
+        "command": "workbench.action.closeAllEditors",
+        "key": "ctrl+shift+q"
     },
     {
-        "key": "ctrl+k ctrl+w",
-        "command": "-workbench.action.closeAllEditors"
+        "command": "-workbench.action.closeAllEditors",
+        "key": "ctrl+k ctrl+w"
     },
     {
-        "key": "ctrl+p",
-        "command": "workbench.action.gotoSymbol"
+        "command": "workbench.action.gotoSymbol",
+        "key": "ctrl+p"
     },
     {
-        "key": "ctrl+shift+o",
-        "command": "-workbench.action.gotoSymbol"
+        "command": "-workbench.action.gotoSymbol",
+        "key": "ctrl+shift+o"
     },
     {
-        "key": "ctrl+shift+s",
-        "command": "workbench.action.files.saveAll"
+        "command": "workbench.action.files.saveAll",
+        "key": "ctrl+shift+s"
     },
     {
-        "key": "ctrl+k s",
-        "command": "-workbench.action.files.saveAll"
+        "command": "-workbench.action.files.saveAll",
+        "key": "ctrl+k s"
     },
     {
-        "key": "ctrl+shift+l",
         "command": "editor.action.deleteLines",
+        "key": "ctrl+shift+l",
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+shift+k",
         "command": "-editor.action.deleteLines",
+        "key": "ctrl+shift+k",
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+m ctrl+m",
         "command": "editor.fold",
+        "key": "ctrl+m ctrl+m",
         "when": "editorTextFocus && foldingEnabled"
     },
     {
-        "key": "ctrl+shift+[",
         "command": "-editor.fold",
+        "key": "ctrl+shift+[",
         "when": "editorTextFocus && foldingEnabled"
     },
     {
-        "key": "alt+y",
-        "command": "workbench.action.quickOpenPreviousEditor"
+        "command": "workbench.action.quickOpenPreviousEditor",
+        "key": "alt+y"
     },
     {
-        "key": "shift+alt+up",
         "command": "editor.action.insertCursorAbove",
+        "key": "shift+alt+up",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+alt+up",
         "command": "-editor.action.insertCursorAbove",
+        "key": "ctrl+alt+up",
         "when": "editorTextFocus"
     },
     {
-        "key": "shift+alt+down",
         "command": "editor.action.insertCursorBelow",
+        "key": "shift+alt+down",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+alt+down",
         "command": "-editor.action.insertCursorBelow",
+        "key": "ctrl+alt+down",
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+shift+c",
         "command": "copyFilePath",
+        "key": "ctrl+shift+c",
         "when": "editorFocus"
     },
     {
-        "key": "shift+alt+c",
         "command": "-copyFilePath",
+        "key": "shift+alt+c",
         "when": "!editorFocus"
     },
     {
-        "key": "shift+alt+.",
         "command": "editor.action.addSelectionToNextFindMatch",
+        "key": "shift+alt+.",
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+d",
         "command": "-editor.action.addSelectionToNextFindMatch",
+        "key": "ctrl+d",
         "when": "editorFocus"
-    },
+    }
 ]
