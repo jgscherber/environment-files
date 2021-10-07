@@ -37,7 +37,7 @@ SetCapsLockState, AlwaysOff
     *p::Send, {blind}!+{p} ; Alt-Shift-p - Toggle Pin tab
 
     ; Copy-Paste replace
-    *v:: Send, {blind}{LWin down}{v}{LWin up}
+    *v:: Send, {blind}^{``}
     *z:: Send, {blind}^!{f} ; Ctrl-Alt-F - launch everything search
 	
 
