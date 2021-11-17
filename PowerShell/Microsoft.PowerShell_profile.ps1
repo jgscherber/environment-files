@@ -1,7 +1,9 @@
 
 # __________________ Environment _____________________________
 $env:Path += ";C:\Program Files\klogg"
-$env:Path += ";C:\Users\JSCHERBER\EverythingCLI"
+$env:Path += ";D:\Personal\EverythingCLI"
+
+Import-Module posh-git;
 
 function Prompt{
     $max_length = 60;
@@ -39,73 +41,27 @@ function Prompt{
     }
 }
 
-# function Prompt {
-#     # It'd be better if this was fixed length
-#     # e.g. C:\...(at most 10 characters) so
-#     # total length would never be more then 3+3+10
-#     # don't need break on slashes (C:\...pex\ is fine)
-#     $parent = $current.Parent;
-
-#     $current_name = $current.Name;
-#     $parent_name = $parent.Name;
-#     $root_name = $current.Root.Name;
-
-#     if ($current_name -eq $root_name) {
-#         # At the root
-#         return "PS $root_name>"
-#     }
-#     elseif ($parent_name -eq $root_name) {
-#         # One Down from root
-#         return "PS $root_name$current_name>"
-#     }
-#     elseif ($parent.Parent.Name -eq $root_name) {
-#         # Two down from root
-#         return "PS $root_name$parent_name\$current_name>"
-#     }
-#     else {
-#         # Many down
-#         return "PS $root_name...\$parent_name\$current_name>"
-#     }
-# }
-
 # ______________________ Location Changing ______________________________
-function Jira($subFolder) {
-    if ($subFolder)
-    {
-        # Concatenation needs to be wrapped in parans
-        Set-Location ("D:\JIRA\*" + $subFolder + "*\");
-    }
-    else {
-        Set-Location ("D:\JIRA\");
-    }
-}
-function Apex() {
-    Set-Location ("C:\Apex\Workspaces\Apex_Dev\Apex");
-}
-
-function Latitude() {
-    Set-Location ("C:\Apex\Workspaces\Apex_Dev\Apex\Client\Web2_0\MVC\Applications\Latitude");
-}
-
-function Maps() {
-    Set-Location ("D:\Maps\test-vendor\test-identifier\test-version");
-}
 function Downloads() {
     Set-Location ("C:\Users\JSCHERBER\Downloads");
 }
 
-function Serverlogs($subFolder) {
-    $serverPath = "D:\Apex\ServerLogs\";
+$oid = "E:\Source\Repos\Security-OneIdentity";
 
-    if ($subFolder)
-    {
-        # Concatenation needs to be wrapped in parans
-        Set-Location ($serverPath + "*" + $subFolder + "*\");
-    }
-    else {
-        Set-Location $serverPath;
-    }
-}
+Set-Alias sdiff "C:\Users\jscherber\AppData\Local\semanticmerge\semanticmergetool.exe";
+
+# function Serverlogs($subFolder) {
+#     $serverPath = "D:\Apex\ServerLogs\";
+
+#     if ($subFolder)
+#     {
+#         # Concatenation needs to be wrapped in parans
+#         Set-Location ($serverPath + "*" + $subFolder + "*\");
+#     }
+#     else {
+#         Set-Location $serverPath;
+#     }
+# }
 
 # https://superuser.com/a/810991
 function UnLnk($target)
@@ -116,9 +72,10 @@ function UnLnk($target)
         return $targetpath
 }
 
-function gcid {
+function lsd {
     Get-ChildItem -Attributes D;
 }
+
 
 # Recycle
 Add-Type -AssemblyName Microsoft.VisualBasic
@@ -155,32 +112,12 @@ function es {
     es.exe -path $current.FullName $args;
 }
 
-# __________________ RNA Stuff ______________________________
-
-function Start-ServerFilter
+# _____________ GIT ____________________
+function gitstashstage
 {
-    & "C:\Apex\Workspaces\Apex_Dev\Apex\Server\Application\NoToolsNoTest.slnf"
+    # https://stackoverflow.com/a/59874960
+    git stash -- $(git diff --staged --name-only)
 }
-
-function Start-Rna
-{
-    # `&` is "call operator"
-    & "C:\Apex\Workspaces\Apex_Dev\Apex\Client\WPF\Applications\RouteNavigator\bin\Debug\RouteNavigator.exe"
-}
-
-function Start-SetupApex
-{
-    # `&` is "call operator"
-    & "C:\Apex\EnvironmentSetupTool\EnvironmentSetupTool.exe"
-}
-
-function Start-KeyMove {
-    & "C:\Program Files\AutoHotkey\AutoHotkey.exe" "D:\Development\Github\environment-files\keymove.ahk"
-}
-
-# function TransitMatrixBuilder {
-#     & "C:\Apex\Workspaces\Apex_Dev\Apex\Server\Application\Services\TransitMatrixBuilder\bin\debug\Roadnet.Apex.Server.Services.TransitMatrixBuilder.exe" $args;
-# }
 
 # https://www.hanselman.com/blog/spend-less-time-cding-around-directories-with-the-powershell-z-shortcut
 #Import-Module z
@@ -200,3 +137,5 @@ function Start-KeyMove {
 
 # Sudo (priv elevation)
 # https://github.com/gerardog/gsudo
+
+Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
