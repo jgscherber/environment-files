@@ -1,7 +1,11 @@
 
 # __________________ Environment _____________________________
-$env:Path += ";C:\Program Files\klogg"
-$env:Path += ";D:\Personal\EverythingCLI"
+$env:Path += ";C:\Program Files\klogg";
+$env:Path += ";D:\Personal\EverythingCLI";
+
+$oid = "E:\Source\Repos\Security-OneIdentity";
+$downloads = "D:\jscherber\OneDrive - Microsoft\Personal\Downloads";
+$desktop = "C:\Users\jscherber\Desktop";
 
 Import-Module posh-git;
 
@@ -40,28 +44,6 @@ function Prompt{
         return $powershell + $root + $dots + $right_path + $prompt;
     }
 }
-
-# ______________________ Location Changing ______________________________
-function Downloads() {
-    Set-Location ("C:\Users\JSCHERBER\Downloads");
-}
-
-$oid = "E:\Source\Repos\Security-OneIdentity";
-
-Set-Alias sdiff "C:\Users\jscherber\AppData\Local\semanticmerge\semanticmergetool.exe";
-
-# function Serverlogs($subFolder) {
-#     $serverPath = "D:\Apex\ServerLogs\";
-
-#     if ($subFolder)
-#     {
-#         # Concatenation needs to be wrapped in parans
-#         Set-Location ($serverPath + "*" + $subFolder + "*\");
-#     }
-#     else {
-#         Set-Location $serverPath;
-#     }
-# }
 
 # https://superuser.com/a/810991
 function UnLnk($target)
@@ -105,6 +87,8 @@ function Start-RecycleBin {
     explorer 'C:\$Recycle.Bin\S-1-5-21-3612712526-2970697336-2168407165-4249'
 }
 
+# search everything
+# https://www.voidtools.com/support/everything/command_line_interface/
 function es {
     # uses the current directory as the execute path
     # todo wrap search term argument in wildcards (*)
@@ -113,29 +97,28 @@ function es {
 }
 
 # _____________ GIT ____________________
+
+Set-Alias sdiff "C:\Users\jscherber\AppData\Local\semanticmerge\semanticmergetool.exe";
+
 function gitstashstage
 {
     # https://stackoverflow.com/a/59874960
     git stash -- $(git diff --staged --name-only)
 }
 
+function gst
+{
+    git status
+}
+
+function gch
+{
+    git checkout
+}
+
 # https://www.hanselman.com/blog/spend-less-time-cding-around-directories-with-the-powershell-z-shortcut
 #Import-Module z
-
-# search everything
-# https://www.voidtools.com/support/everything/command_line_interface/
-
-# prompt
-# https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_prompts?view=powershell-7.1
-# function prompt {
-#     $(if (Test-Path variable:/PSDebugContext) { '[DBG]: ' } else { '' })
-#     + [System.Environment]::NewLine
-#     + 'PS ' + $(Get-Location)
-#     + $(if ($NestedPromptLevel -ge 1) { '>>' })
-#     + '> '
-# }
 
 # Sudo (priv elevation)
 # https://github.com/gerardog/gsudo
 
-Import-Module 'C:\tools\poshgit\dahlbyk-posh-git-9bda399\src\posh-git.psd1'
