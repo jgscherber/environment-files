@@ -12,17 +12,17 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[xml]": {
-        "editor.defaultFormatter": "DotJoshJohnson.xml"
+        "editor.defaultFormatter": "redhat.vscode-xml"
     },
-    "breadcrumbs.enabled": true,
     "csharp.referencesCodeLens.enabled": false,
     "csharp.semanticHighlighting.enabled": true,
     "csharpextensions.privateMemberPrefix": "_",
-    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.experimental.stickyScroll.enabled": true,
     "editor.detectIndentation": false,
-    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'JetBrains Mono NL', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": false,
-    "editor.fontSize": 13,
+    "editor.fontSize": 12,
     "editor.minimap.enabled": true,
     "editor.renderControlCharacters": true,
     "editor.tokenColorCustomizations": {
@@ -43,8 +43,6 @@
     "files.hotExit": "off",
     "git.autofetch": true,
     "git.enableSmartCommit": true,
-    "gitlens.codeLens.enabled": false,
-    "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
     "highlight.regexes": {
         "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
@@ -112,10 +110,16 @@
     "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
     "mssql.connections": [
         {
-            "database": "{{put-database-name-here}}",
-            "password": "{{put-password-here}}",
-            "server": "{{put-server-name-here}}",
-            "user": "{{put-username-here}}"
+            "server": "(localdb)\\.\\OneIdentityLocal",
+            "database": "",
+            "authenticationType": "Integrated",
+            "password": ""
+        },
+        {
+            "server": "(localdb)\\OneYubiLocal",
+            "database": "",
+            "authenticationType": "Integrated",
+            "password": ""
         }
     ],
     "nxunitExplorer.nunit": "C:\\Apex\\Workspaces\\Apex_Dev\\3rdParty\\NUnit\\2.5.3",
@@ -133,7 +137,6 @@
     "todo-tree.tree.scanAtStartup": false,
     "todo-tree.tree.showScanModeButton": false,
     "window.restoreWindows": "none",
-    "window.zoomLevel": 0,
     "workbench.activityBar.visible": true,
     "workbench.colorCustomizations": {
         "activityBar.background": "#333333",
@@ -152,5 +155,17 @@
     "workbench.editor.untitled.hint": "hidden",
     "workbench.editor.wrapTabs": true,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.enablePreview": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "markdown.extension.orderedList.autoRenumber": false,
+    "markdown.extension.orderedList.marker": "one",
+    "sqlDatabaseProjects.netCoreDowngradeDoNotShow": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 180,
+    "editor.inlineSuggest.enabled": true,
+    "tabnine.experimentalAutoImports": true,
+    "editor.tabSize": 2
 }

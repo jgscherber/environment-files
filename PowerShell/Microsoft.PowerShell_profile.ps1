@@ -2,8 +2,10 @@
 # __________________ Environment _____________________________
 $env:Path += ";C:\Program Files\klogg";
 $env:Path += ";D:\Personal\EverythingCLI";
+$env:Path += ";C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin";
 
 $oid = "E:\Source\Repos\Security-OneIdentity";
+$oyb = "E:\Source\Repos\OneYubi\src";
 $downloads = "D:\jscherber\OneDrive - Microsoft\Personal\Downloads";
 $desktop = "C:\Users\jscherber\Desktop";
 
