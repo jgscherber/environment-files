@@ -21,9 +21,8 @@ Media_Play_Pause:: ; disable media auto-play
     ; Other
     *f::Send, {blind}{Esc}
     *o::Send, {blind}!{Left}
-    *q::Send, {blind}^{w} ; close tab in Chrome and VS2017 (custom bind)
     *u::Send, {blind}{RCtrl down}{RAlt down}{Tab}{RAlt up}{RCtrl up} ; Ctrl+Alt+Tab - switch window
-    *y::Send, {blind}!{y} ; Alt+y - switch tabs
+    ;*y::Send, {blind}!{y} ; Alt+y - switch tabs
     *\::WinSet, AlwaysOnTop, toggle, A ; Pin window to top
 
     ; VS2019 shortcuts
@@ -43,6 +42,10 @@ Media_Play_Pause:: ; disable media auto-play
     *z:: Send, {blind}^!{f} ; Ctrl-Alt-F - launch everything search
     ^+v::SendRaw %clipboard%
 	
+    ; Web Browser
+    *q::Send, {blind}^{w} ; close tab in Chrome and VS2017 (custom bind)
+    *8::Send, {blind}^{PgUp} ; Previous tab
+    *9::Send, {blind}^{PgDn} ; Next tab
 
     ; Mouse mode
     *b::
