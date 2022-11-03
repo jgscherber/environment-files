@@ -49,7 +49,7 @@ Media_Play_Pause:: ; disable media auto-play
 
     ; Mouse mode
     *b::
-        Run "keymouse.ahk" ; needs to be in same directory
+        ; Run "keymouse.ahk" ; needs to be in same directory
         ExitApp
     return
 #if
