@@ -20,7 +20,6 @@ Media_Play_Pause:: ; disable media auto-play
 
     ; Other
     *f::Send, {blind}{Esc}
-    *o::Send, {blind}!{Left}
     *u::Send, {blind}{RCtrl down}{RAlt down}{Tab}{RAlt up}{RCtrl up} ; Ctrl+Alt+Tab - switch window
     *\::WinSet, AlwaysOnTop, toggle, A ; Pin window to top
 
@@ -36,6 +35,7 @@ Media_Play_Pause:: ; disable media auto-play
     *[::Send, {blind}!+{[} ; Alt-Shift-[ - Go to head of block
     *p::Send, {blind}!+{p} ; Alt-Shift-p - Toggle Pin tab
     *y::Send, {blind}!{y} ; Alt+y - Go to recent
+    *y::Send, {blind}!{y} ; Alt+y - Go to recent
 
     ; Copy-Paste replace
     *v:: Send, {blind}^{``}
@@ -44,8 +44,11 @@ Media_Play_Pause:: ; disable media auto-play
 	
     ; Web Browser
     *q::Send, {blind}^{w} ; close tab in Chrome and VS2017 (custom bind)
-    *8::Send, {blind}^{PgUp} ; Previous tab
-    *9::Send, {blind}^{PgDn} ; Next tab
+    *7::Send, {blind}!{Left} ; Alt-Left -- Back
+    *8::Send, {blind}^{PgUp} ; Ctrl-PgUp -- Previous tab
+    *9::Send, {blind}^{PgDn} ; Ctrl-PgDn -- Next tab
+    *0::Send, {blind}!{Right} ; Alt-Right -- Forward
+
 
     ; Mouse mode
     *b::
