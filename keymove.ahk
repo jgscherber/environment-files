@@ -22,7 +22,6 @@ Media_Play_Pause:: ; disable media auto-play
     *f::Send, {blind}{Esc}
     *o::Send, {blind}!{Left}
     *u::Send, {blind}{RCtrl down}{RAlt down}{Tab}{RAlt up}{RCtrl up} ; Ctrl+Alt+Tab - switch window
-    ;*y::Send, {blind}!{y} ; Alt+y - switch tabs
     *\::WinSet, AlwaysOnTop, toggle, A ; Pin window to top
 
     ; VS2019 shortcuts
@@ -36,6 +35,7 @@ Media_Play_Pause:: ; disable media auto-play
     *n::Send, {blind}^+{l} ; Ctrl-Shift-L - Delete Line
     *[::Send, {blind}!+{[} ; Alt-Shift-[ - Go to head of block
     *p::Send, {blind}!+{p} ; Alt-Shift-p - Toggle Pin tab
+    *y::Send, {blind}!{y} ; Alt+y - Go to recent
 
     ; Copy-Paste replace
     *v:: Send, {blind}^{``}
