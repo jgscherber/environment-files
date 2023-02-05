@@ -34,7 +34,7 @@ Media_Play_Pause:: ; disable media auto-play
     *n::Send, {blind}^+{l} ; Ctrl-Shift-L - Delete Line
     *[::Send, {blind}!+{[} ; Alt-Shift-[ - Go to head of block
     *p::Send, {blind}!+{p} ; Alt-Shift-p - Toggle Pin tab
-    *y::Send, {blind}!{y} ; Alt+y -- Go to recent
+    *y::Send, {blind}!{y} ; Alt+y - Go to recent
 
     ; Copy-Paste replace
     *v:: Send, {blind}^{``}
