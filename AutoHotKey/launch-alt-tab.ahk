@@ -1,0 +1,1 @@
+Send, {blind}!{Tab} ; Alt+Tab - switch window

@@ -50,8 +50,12 @@ Media_Play_Pause:: ; disable media auto-play
 
 
     ; Mouse mode
-    *b::
-        ; Run "keymouse.ahk" ; needs to be in same directory
+    *3::
+        Run, win-vind --func easy_click_hover
+        Run "keymove.ahk" ; With the full file path specified, of course
         ExitApp
-    return
+        return
+    *4::Run, win-vind --func easy_click_left
+    *5::Run, win-vind --func easy_click_right
+    *6::Run, win-vind --func easy_click_mid
 #if

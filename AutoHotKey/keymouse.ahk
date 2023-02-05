@@ -28,17 +28,17 @@ j::vkE8
 l::vkE8
 i::vkE8
 k::vkE8
-b:: 
+q:: 
     Run "keymove.ahk" ; With the full file path specified, of course
     ExitApp
     return
-s:: MouseClick, left ; when you press q, mouse will left click
-f:: MouseClick, right ; when you press e, mouse will right click
-e:: MouseClick, WheelUp
-d:: MouseClick, WheelDown
-w:: MouseClick, WheelLeft
-r:: MouseClick, WheelRight
-a:: MouseClick, Middle
+f:: MouseClick, left ; when you press q, mouse will left click
+g:: MouseClick, right ; when you press e, mouse will right click
+; e:: MouseClick, WheelUp
+; d:: MouseClick, WheelDown
+; w:: MouseClick, WheelLeft
+; r:: MouseClick, WheelRight
+r:: MouseClick, Middle
 
 
 
