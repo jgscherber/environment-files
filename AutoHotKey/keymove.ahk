@@ -16,12 +16,13 @@ Media_Play_Pause:: ; disable media auto-play
 
     ; Delete Keys
     *h::Send, {blind}{Backspace}
-    *`;::Send, {blind}{Delete}
+    *`;::Send, {blind}{Delete} ; back-tick (`) escapes the comment
 
     ; Other
     *f::Send, {blind}{Esc}
     *u::Send, {blind}{RCtrl down}{RAlt down}{Tab}{RAlt up}{RCtrl up} ; Ctrl+Alt+Tab - switch window
     *\::WinSet, AlwaysOnTop, toggle, A ; Pin window to top
+    *~`::Send, {blind}!{F4} ; Alt-F4 (tilde to escape back-tick)
 
     ; VS2019 shortcuts
     *m::Send, {blind}^{F12} ; Ctrl+F12 - goto implementation
