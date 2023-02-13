@@ -15,7 +15,7 @@ l := 1
 r := 1
 left_mouse_d := 1
 
-SetTimer, CheckForKeyMouse, 5
+;SetTimer, CheckForKeyMouse, 5
 return
 
 ; https://autohotkey.com/board/topic/37947-turn-keyboard-into-mouse/
@@ -25,15 +25,26 @@ return
     *l::vkE8 ; "vkE8" (dummy key to ignore input)
     *i::vkE8 ; "vkE8" (dummy key to ignore input)
     *k::vkE8 ; "vkE8" (dummy key to ignore input)
-    *f::MouseClick, left
-    *g::MouseClick, right
+    *f::
+      MouseClick, left
+      ReturnToKeyMove()
+    *g::
+      MouseClick, right
+      ReturnToKeyMove()
     ; e::MouseClick, WheelUp
     ; d::MouseClick, WheelDown
     ; w::MouseClick, WheelLeft
     ; r::MouseClick, WheelRight
-    *r::MouseClick, Middle
+    *r::
+      MouseClick, Middle
+      ReturnToKeyMove()
 
-    *3::Run, win-vind --func easy_click_hover
+    *3::
+      SetTimer, CheckForKeyMouse, off
+      Run, win-vind --func easy_click_hover
+      Sleep, 2000
+      ;SetTimer, CheckForKeyMouse, 5
+
 
     *q::ReturnToKeyMove()
 #if
