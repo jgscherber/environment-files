@@ -23,6 +23,7 @@ Media_Play_Pause:: ; disable media auto-play
     *u::Send, {blind}{RCtrl down}{RAlt down}{Tab}{RAlt up}{RCtrl up} ; Ctrl+Alt+Tab - switch window
     *\::WinSet, AlwaysOnTop, toggle, A ; Pin window to top
     *~`::Send, {blind}!{F4} ; Alt-F4 (tilde to escape back-tick)
+    *~]::Send, {blind}#{t} ; Win-T - Go to taskbar
 
     ; VS2019 shortcuts
     *m::Send, {blind}^{F12} ; Ctrl+F12 - goto implementation
