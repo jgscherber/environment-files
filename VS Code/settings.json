@@ -18,13 +18,15 @@
     "csharp.semanticHighlighting.enabled": true,
     "csharpextensions.privateMemberPrefix": "_",
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.experimental.stickyScroll.enabled": true,
     "editor.detectIndentation": false,
+    "editor.experimental.stickyScroll.enabled": true,
     "editor.fontFamily": "'JetBrains Mono NL', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": false,
     "editor.fontSize": 12,
+    "editor.inlineSuggest.enabled": true,
     "editor.minimap.enabled": true,
     "editor.renderControlCharacters": true,
+    "editor.tabSize": 2,
     "editor.tokenColorCustomizations": {
         "comments": "#008000",
         "functions": "#a80000",
@@ -33,6 +35,8 @@
         "types": "#0d7d00",
         "variables": "#333333"
     },
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 180,
     "explorer.openEditors.sortOrder": "alphabetical",
     "files.exclude": {
         "**/.vscode": true,
@@ -43,6 +47,8 @@
     "files.hotExit": "off",
     "git.autofetch": true,
     "git.enableSmartCommit": true,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
     "highlight.regexes": {
         "((?:<!-- *)?(?:#|// @|//|./\\*+|<!--|--|\\* @|{!|{{!--|{{!) *(?:FIXME|FIX|BUG|UGLY|DEBUG|HACK)(?:\\s*\\([^)]+\\))?:?)((?!\\w)(?: *-->| *\\*/| *!}| *--}}| *}}|(?= *(?:[^:]//|/\\*+|<!--|@|--|{!|{{!--|{{!))|(?: +[^\\n@]*?)(?= *(?:[^:]//|/\\*+|<!--|@|--(?!>)|{!|{{!--|{{!))|(?: +[^@\\n]+)?))": {
@@ -108,18 +114,20 @@
     },
     "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
     "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "markdown.extension.orderedList.autoRenumber": false,
+    "markdown.extension.orderedList.marker": "one",
     "mssql.connections": [
         {
-            "server": "(localdb)\\.\\OneIdentityLocal",
-            "database": "",
             "authenticationType": "Integrated",
-            "password": ""
+            "database": "",
+            "password": "",
+            "server": "(localdb)\\.\\OneIdentityLocal"
         },
         {
-            "server": "(localdb)\\OneYubiLocal",
-            "database": "",
             "authenticationType": "Integrated",
-            "password": ""
+            "database": "",
+            "password": "",
+            "server": "(localdb)\\OneYubiLocal"
         }
     ],
     "nxunitExplorer.nunit": "C:\\Apex\\Workspaces\\Apex_Dev\\3rdParty\\NUnit\\2.5.3",
@@ -130,6 +138,9 @@
     "python.pythonPath": "%localappdata%\\Programs\\Python\\Python37-32\\python.exe",
     "python.showStartPage": false,
     "redhat.telemetry.enabled": false,
+    "security.workspace.trust.untrustedFiles": "open",
+    "sqlDatabaseProjects.netCoreDowngradeDoNotShow": true,
+    "tabnine.experimentalAutoImports": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "underline",
     "terminal.integrated.fontSize": 13,
@@ -150,22 +161,11 @@
         "terminal.background": "#fdfafd"
     },
     "workbench.colorTheme": "Quiet Light",
+    "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.restoreViewState": false,
     "workbench.editor.untitled.hint": "hidden",
     "workbench.editor.wrapTabs": true,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "newUntitledFile",
-    "workbench.editor.enablePreview": false,
-    "gitlens.currentLine.enabled": false,
-    "gitlens.codeLens.enabled": false,
-    "markdown.extension.orderedList.autoRenumber": false,
-    "markdown.extension.orderedList.marker": "one",
-    "sqlDatabaseProjects.netCoreDowngradeDoNotShow": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 180,
-    "editor.inlineSuggest.enabled": true,
-    "tabnine.experimentalAutoImports": true,
-    "editor.tabSize": 2
+    "workbench.startupEditor": "newUntitledFile"
 }
