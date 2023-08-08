@@ -28,7 +28,7 @@ Media_Play_Pause:: ; disable media auto-play
     ; VS2019 shortcuts
     *m::Send, {blind}^{F12} ; Ctrl+F12 - goto implementation
     *t::Send, {blind}^{t} ; Ctrl-T - launch Go To File
-    ;*e::Send, {blind} ; AVAILABLE COMBO
+    *e::Return ; AVAILABLE COMBO
     *r::Send, {blind}^{p} ; Ctrl-P - launch Go To Member
     *g::Send, {blind}^{g} ; Ctrl-G - Go to line
     *=::Send, {blind}!+{=} ; Alt-Shift-= - Expand selection
