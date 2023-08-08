@@ -16,11 +16,12 @@ mirror_s = l
 mirror_d = k
 mirror_f = j
 mirror_g = h
-mirror_z = /
-mirror_x = .
-mirror_c = ,
-mirror_v = m
-mirror_b = n
+; reverse for . and , handled below in if-statement (invalid var names)
+mirror_z = .
+mirror_x = ,
+mirror_c = m
+mirror_v = n
+mirror_b = b
 mirror_6 = 5
 mirror_7 = 4
 mirror_8 = 3
@@ -35,8 +36,8 @@ mirror_h = g
 mirror_j = f
 mirror_k = d
 mirror_l = s
-mirror_n = b
-mirror_m = v
+mirror_n = v
+mirror_m = c
 return
 
 
@@ -46,6 +47,12 @@ Control & Space::Suspend
 ; These keys are optional, but they may help if you are typing on the left-hand side.
 ; CapsLock::Send, {BackSpace}
 ; Space & CapsLock::Send, {Enter}
+
+;TODO change to trigger on space-down >> but then can't hold and type multiple
+; if space is pressed, send space (so double tap for space)
+; if key, send mirror and space-up
+
+; TODO better way to handle shift
 
 ; If spacebar didn't modify anything, send a real space keystroke upon release.
 space::
@@ -92,15 +99,17 @@ space & k::
 space & l::
 space & n::
 space & m::
+
 ; Determine the mirror key, if there is one:
 if A_ThisHotkey = space & `;
    MirrorKey = a
 else if A_ThisHotkey = space & ,
-   MirrorKey = c
-else if A_ThisHotkey = space & .
    MirrorKey = x
+else if A_ThisHotkey = space & .
+   MirrorKey = z
 else if A_ThisHotkey = space & /
    MirrorKey = z
+  ; TODO 'tab' on space & enter
 else  ; To avoid runtime errors due to invalid var names, do this part last.
 {
    StringRight, ThisKey, A_ThisHotkey, 1
