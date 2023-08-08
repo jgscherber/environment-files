@@ -1,4 +1,5 @@
 ; Many thanks to Chris for helping me out with this script.
+; https://www.autohotkey.com/board/topic/1257-half-qwerty-one-handed-typing/
 ;http://half-qwerty.com/resources/images/rightboard.gif
 
 mirror_1 = 0
