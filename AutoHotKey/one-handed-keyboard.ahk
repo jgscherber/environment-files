@@ -53,7 +53,7 @@ Control & Space::Suspend
 ; if space is pressed, send space (so double tap for space)
 ; if key, send mirror and space-up
 
-; TODO better way to handle shift
+; TODO better way to handle shift... //www.autohotkey.com/board/topic/41510-is-there-any-way-to-get-shift-to-toggle-like-caps-lock/?p=259395
 
 ; If spacebar didn't modify anything, send a real space keystroke upon release.
 space::
@@ -89,6 +89,7 @@ space & 7::
 space & 8::
 space & 9::
 space & 0::
+space & -::
 space & y::
 space & u::
 space & i::
@@ -98,6 +99,7 @@ space & h::
 space & j::
 space & k::
 space & l::
+space & Enter::
 space & n::
 space & m::
 
@@ -110,7 +112,10 @@ else if A_ThisHotkey = space & .
    MirrorKey = z
 else if A_ThisHotkey = space & /
    MirrorKey = z
-  ; TODO 'tab' on space & enter
+else if A_ThisHotkey = space & -
+  MirrorKey = ``
+else if A_ThisHotkey = space & Enter
+  MirrorKey = Tab
 else  ; To avoid runtime errors due to invalid var names, do this part last.
 {
    StringRight, ThisKey, A_ThisHotkey, 1
