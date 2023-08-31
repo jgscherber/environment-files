@@ -1,5 +1,8 @@
 {
   "accentColor": "",
+  "theme": "moonstone",
   "cssTheme": "Obsidianotion",
-  "theme": "moonstone"
+  "monospaceFontFamily": "JetBrains Mono NL",
+  "nativeMenus": true,
+  "baseFontSize": 18
 }

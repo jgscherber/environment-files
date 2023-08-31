@@ -1,5 +1,12 @@
 {
-  "attachmentFolderPath": "attachments",
+  "showInlineTitle": true,
+  "readableLineLength": false,
+  "showIndentGuide": false,
+  "useTab": true,
+  "spellcheck": false,
+  "newFileLocation": "current",
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "zzAttachments",
   "alwaysUpdateLinks": true,
-  "readableLineLength": false
+  "tabSize": 6
 }
