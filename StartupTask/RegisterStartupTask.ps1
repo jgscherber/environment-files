@@ -1,7 +1,7 @@
 param([string] $environmentFilesPath)
 
-$startupFolder = "Startup"
-$startupFile = "Startup.ps1"
+$startupFolder = "StartupTask"
+$startupFile = "Startup_launch.ps1"
 
 $starupFolderPath = $environmentFilesPath + "\" + $startupFolder;
 $startupFilePath = $starupFolderPath + "\" + $startupFile;
