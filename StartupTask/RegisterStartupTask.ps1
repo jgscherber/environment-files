@@ -1,4 +1,8 @@
 param([string] $environmentFilesPath)
+if (-not $environmentFilesPath)
+{
+    throw "Missing environmentFilesPath";
+}
 
 $startupFolder = "StartupTask"
 $startupFile = "Startup_launch.ps1"

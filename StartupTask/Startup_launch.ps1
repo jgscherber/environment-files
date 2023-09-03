@@ -5,6 +5,6 @@ $StartUpCommands = @(
     "& 'C:\Program Files\Ditto\Ditto.exe'"
 )
 
-$StartUpCommands | ForEach-Object { Invoke-Expression $_ };
+$StartUpCommands | ForEach-Object { Invoke-Expression $_ -ErrorAction SilentlyContinue};
 
 
