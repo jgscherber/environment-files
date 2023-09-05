@@ -23,7 +23,6 @@
     "[xml]": {
         "editor.defaultFormatter": "redhat.vscode-xml"
     },
-    "csharp.referencesCodeLens.enabled": false,
     "csharp.semanticHighlighting.enabled": true,
     "csharpextensions.privateMemberPrefix": "_",
     "editor.accessibilitySupport": "off",
@@ -65,10 +64,11 @@
     "git.enableSmartCommit": true,
     "github.copilot-labs.showTestGenerationLenses": true,
     "github.copilot.enable": {
-        "*": true,
-        "markdown": false,
-        "plaintext": true,
-        "yaml": false
+      "*": true,
+      "plaintext": true,
+      "markdown": true,
+      "scminput": false,
+      "yaml": false
     },
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
@@ -154,7 +154,6 @@
         }
     ],
     "nxunitExplorer.nunit": "C:\\Apex\\Workspaces\\Apex_Dev\\3rdParty\\NUnit\\2.5.3",
-    "omnisharp.enableImportCompletion": true,
     "omnisharp.enableRoslynAnalyzers": true,
     "powershell.promptToUpdatePowerShell": false,
     "print.colourScheme": "Arduino",
@@ -186,12 +185,15 @@
         "editorGutter.background": "#f2f2f2",
         "terminal.background": "#fdfafd"
     },
-    "workbench.colorTheme": "Quiet Light",
+    "workbench.colorTheme": "Visual Studio 2019 Light",
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.restoreViewState": false,
     "workbench.editor.untitled.hint": "hidden",
     "workbench.editor.wrapTabs": true,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "hediet.vscode-drawio.resizeImages": null,
+    "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+    "dotnet.codeLens.enableReferencesCodeLens": false
 }

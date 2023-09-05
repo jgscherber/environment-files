@@ -2,7 +2,7 @@
 [
     {
         "command": "workbench.action.showAllSymbols",
-        "key": "ctrl+p"
+        "key": "ctrl+shift+p"
     },
     {
         "command": "-workbench.action.showAllSymbols",
@@ -63,7 +63,7 @@
     },
     {
         "command": "workbench.action.gotoSymbol",
-        "key": "ctrl+p"
+        "key": "ctrl+shift+p"
     },
     {
         "command": "-workbench.action.gotoSymbol",
@@ -140,5 +140,9 @@
         "command": "-editor.action.addSelectionToNextFindMatch",
         "key": "ctrl+d",
         "when": "editorFocus"
+    },
+    {
+      "key": "ctrl+p",
+      "command": "workbench.action.showCommands"
     }
 ]
