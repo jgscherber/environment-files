@@ -21,9 +21,10 @@ Media_Play_Pause:: ; disable media auto-play
     ; Other
     *f::Send, {blind}{Esc}
     *u::Send, {blind}{RCtrl down}{RAlt down}{Tab}{RAlt up}{RCtrl up} ; Ctrl+Alt+Tab - switch window
-    *\::WinSet, AlwaysOnTop, toggle, A ; Pin window to top
     *~`::Send, {blind}!{F4} ; Alt-F4 (tilde to escape back-tick)
-    *~]::Send, {blind}#{t} ; Win-T - Go to taskbar
+    *~]::WinSet, AlwaysOnTop, toggle, A ; Pin window to top
+    *~.::Send, {blind}#{t} ; Win-T - Go to taskbar]
+    *[::Send, {blind}^{[} ; Ctrl+[ (back in Notion)
 
     ; VS2019 shortcuts
     *m::Send, {blind}^{F12} ; Ctrl+F12 - goto implementation
@@ -34,7 +35,6 @@ Media_Play_Pause:: ; disable media auto-play
     *=::Send, {blind}!+{=} ; Alt-Shift-= - Expand selection
     *-::Send, {blind}!+{-} ; Alt-Shift-- - Shrink selection
     *n::Send, {blind}^+{l} ; Ctrl-Shift-L - Delete Line
-    *[::Send, {blind}!+{[} ; Alt-Shift-[ - Go to head of block
     *p::Send, {blind}!+{p} ; Alt-Shift-p - Toggle Pin tab
     *y::Send, {blind}!{y} ; Alt+y - Go to recent
 
