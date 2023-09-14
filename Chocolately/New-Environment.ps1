@@ -25,6 +25,7 @@ choco install 7zip.install -y;
 choco install vlc -y;
 choco install python3 -y;
 choco install git.install -y;
+choco install win-vind -y;
 choco install Firefox --params "/NoDesktopShortcut /RemoveDistributionDir";
 choco install everything --params "/folder-context-menu /run-on-system-startup /client-service";
 
