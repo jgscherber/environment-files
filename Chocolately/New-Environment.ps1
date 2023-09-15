@@ -18,6 +18,9 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 # Get Chocolately
 winget install chocolatey.chocolatey;
 
+# Refresh the path, post installation
+$Env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+
 #### Chocolately ####
 choco install notion -y;
 choco install anki -y;
@@ -36,8 +39,9 @@ choco install python3 -y;
 choco install git.install -y;
 choco install win-vind -y;
 choco install github-desktop -y;
-choco install Firefox --params "/NoDesktopShortcut /RemoveDistributionDir";
-choco install everything --params "/folder-context-menu /run-on-system-startup /client-service";
+choco install Firefox --params "/NoDesktopShortcut /RemoveDistributionDir" -y;
+choco install everything --params "/folder-context-menu /run-on-system-startup /client-service" -y;
+choco install obsidian -y;
 
 if ($environment -eq "Home")
 {
@@ -49,6 +53,7 @@ if ($environment -eq "Home")
 if ($environment -eq "Work")
 {
   choco install visualstudio2022enterprise -y;
+  choco install sql-server-management-studio -y;
 }
 
 
