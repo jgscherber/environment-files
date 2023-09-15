@@ -1,3 +1,10 @@
+[CmdletBinding()]
+param(
+  [Parameter(Mandatory=$false, HelpMessage="Install location")]
+  [ValidateSet('Home', 'Work')]
+  [string]$environment = 'Home'
+)
+
 $currentPrincipal = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
 if(-not $currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator))
 {
@@ -11,25 +18,41 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 # Get Chocolately
 winget install chocolatey.chocolatey;
 
-# Chocolately
+#### Chocolately ####
 choco install notion -y;
+choco install anki -y;
+choco install paint.net -y;
 choco install spotify -y;
 choco install vscode -y;
-choco install adobereader -y;
+choco install remote-desktop-client -y;
 choco install klogg -y;
 choco install autohotkey -y;
 choco install windirstat -y;
+choco install passwordsafe -y;
 choco install x-mouse-button-control -y;
 choco install ditto -y;
 choco install 7zip.install -y;
-choco install vlc -y;
 choco install python3 -y;
 choco install git.install -y;
 choco install win-vind -y;
+choco install github-desktop -y;
 choco install Firefox --params "/NoDesktopShortcut /RemoveDistributionDir";
 choco install everything --params "/folder-context-menu /run-on-system-startup /client-service";
 
+if ($environment -eq "Home")
+{
+  choco install adobereader -y;
+  choco install vlc -y;
+  choco install visualstudio2022community -y;
+}
+
+if ($environment -eq "Work")
+{
+  choco install visualstudio2022enterprise -y;
+}
+
+
 # PowerShell
-choco install powershell-core --version=7.1.1
+choco install powershell-core -y;
 PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
 
