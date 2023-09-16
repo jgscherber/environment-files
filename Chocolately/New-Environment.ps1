@@ -15,11 +15,15 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 # [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;
 # iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
-# Get Chocolately
-winget install chocolatey.chocolatey;
+$command = Get-Command choco -ErrorAction SilentlyContinue
+if ($null -eq $command)
+{
+  # Get Chocolately
+  winget install chocolatey.chocolatey;
 
-# Refresh the path, post installation
-$Env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+  # Refresh the path, post installation
+  $Env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+}
 
 #### Chocolately ####
 choco install notion -y;
