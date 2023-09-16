@@ -42,6 +42,7 @@ choco install github-desktop -y;
 choco install Firefox --params "/NoDesktopShortcut /RemoveDistributionDir" -y;
 choco install everything --params "/folder-context-menu /run-on-system-startup /client-service" -y;
 choco install obsidian -y;
+choco install chocolateygui -y;
 
 if ($environment -eq "Home")
 {
