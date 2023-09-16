@@ -18,7 +18,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 $command = Get-Command choco -ErrorAction SilentlyContinue
 if ($null -eq $command)
 {
-  # Get Chocolately
+  Write-Host "choco command not found, installing Chocolately";
   winget install chocolatey.chocolatey;
 
   # Refresh the path, post installation
@@ -26,6 +26,7 @@ if ($null -eq $command)
 }
 
 #### Chocolately ####
+Write-Host "Installing application";
 choco install notion -y;
 choco install anki -y;
 choco install paint.net -y;
