@@ -65,7 +65,8 @@ if ($environment -eq "Work")
   choco install sql-server-management-studio -y;
   choco install visualstudio2022enterprise -y;
   choco install dotnetcore-2.1-sdk -y;
-  Get-WUInstall -KBArticleID KB5027702 -AcceptAll -IgnoreReboot;
+  # Install-Module PSWindowsUpdate -Force;
+  # Get-WUInstall -KBArticleID KB5027702 -AcceptAll -IgnoreReboot;
 }
 
 ######### Dependent Installs ############
