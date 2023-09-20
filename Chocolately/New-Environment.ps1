@@ -38,6 +38,7 @@ choco install everything --params "/folder-context-menu /run-on-system-startup /
 choco install Firefox --params "/NoDesktopShortcut /RemoveDistributionDir" -y;
 choco install git.install -y;
 choco install github-desktop -y;
+choco install jetbrainsmono -y;
 choco install klogg -y;
 choco install notion -y;
 choco install obsidian -y;
