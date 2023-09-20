@@ -63,6 +63,7 @@ if ($environment -eq "Work")
 {
   choco install sql-server-management-studio -y;
   choco install visualstudio2022enterprise -y;
+  choco install dotnetcore-2.1-sdk -y;
 }
 
 ######### Dependent Installs ############
