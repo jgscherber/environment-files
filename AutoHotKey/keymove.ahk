@@ -25,6 +25,7 @@ Media_Play_Pause:: ; disable media auto-play
     *~]::WinSet, AlwaysOnTop, toggle, A ; Pin window to top
     *~.::Send, {blind}#{t} ; Win-T - Go to taskbar]
     *[::Send, {blind}^{[} ; Ctrl+[ (back in Notion)
+    */::Send, {blind}{AppsKey} ; Right-click menu key
 
     ; VS2019 shortcuts
     *m::Send, {blind}^{F12} ; Ctrl+F12 - goto implementation
