@@ -4,5 +4,9 @@
   "cssTheme": "Obsidianotion",
   "monospaceFontFamily": "JetBrains Mono NL",
   "nativeMenus": true,
-  "baseFontSize": 18
+  "baseFontSize": 17,
+  "enabledCssSnippets": [
+    "link-formatting"
+  ],
+  "textFontFamily": "Century Gothic,Calibri"
 }
