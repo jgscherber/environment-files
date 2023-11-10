@@ -77,6 +77,7 @@ PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
 # VS Code
 if (Test-CommandExists "code")
 {
+    # Generated using: code --list-extensions | % { "code --install-extension $_" }
     code --install-extension dvirtz.parquet-viewer
     code --install-extension eamodio.gitlens
     code --install-extension GitHub.copilot
