@@ -25,7 +25,6 @@
     },
     "csharp.semanticHighlighting.enabled": true,
     "csharpextensions.privateMemberPrefix": "_",
-    "diffEditor.ignoreTrimWhitespace": false,
     "dotnet.codeLens.enableReferencesCodeLens": false,
     "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
     "editor.accessibilitySupport": "off",
@@ -43,7 +42,6 @@
     "editor.renderControlCharacters": true,
     "editor.renderWhitespace": "none",
     "editor.stickyScroll.enabled": true,
-    "editor.tabSize": 2,
     "editor.tokenColorCustomizations": {
         "comments": "#008000",
         "functions": "#a80000",
@@ -55,6 +53,7 @@
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 180,
     "explorer.openEditors.sortOrder": "alphabetical",
+    "files.autoSave": "onFocusChange",
     "files.exclude": {
         "**/.vscode": true,
         "**/bin": true,
@@ -178,7 +177,8 @@
     "todo-tree.tree.scanAtStartup": false,
     "todo-tree.tree.showScanModeButton": false,
     "window.restoreWindows": "none",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": -1,
+    "workbench.activityBar.location": "top",
     "workbench.colorCustomizations": {
         "activityBar.background": "#333333",
         "activityBar.foreground": "#eeffff",
@@ -191,10 +191,11 @@
         "terminal.background": "#fdfafd"
     },
     "workbench.colorTheme": "Visual Studio 2019 Light",
+    "workbench.editor.empty.hint": "hidden",
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
     "workbench.editor.restoreViewState": false,
-    "workbench.editor.untitled.hint": "hidden",
     "workbench.editor.wrapTabs": true,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile"
