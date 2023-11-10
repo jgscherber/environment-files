@@ -5,6 +5,7 @@ param(
   [string]$environment = 'Home'
 )
 
+# Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy Unrestricted -Force;
 $currentPrincipal = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
 if(-not $currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator))
 {
