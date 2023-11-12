@@ -180,8 +180,6 @@
     "todo-tree.tree.showScanModeButton": false,
     "window.restoreWindows": "none",
     "window.zoomLevel": -1,
-    "workbench.activityBar.visible": true,
-    "workbench.activityBar.location": "top",
     "workbench.colorCustomizations": {
         "activityBar.background": "#333333",
         "activityBar.foreground": "#eeffff",
@@ -199,8 +197,9 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.pinnedTabsOnSeparateRow": true,
     "workbench.editor.restoreViewState": false,
-    "workbench.editor.untitled.hint": "hidden",
     "workbench.editor.wrapTabs": true,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.tree.indent": 16,
+    "workbench.tree.renderIndentGuides": "always"
 }
