@@ -1,7 +1,6 @@
 [
-  "highlightr-plugin",
-  "obsidian-code-block-enhancer",
+  "folder-note-core",
   "alx-folder-note",
-  "waypoint",
-  "folder-note-core"
+  "highlightr-plugin",
+  "waypoint"
 ]

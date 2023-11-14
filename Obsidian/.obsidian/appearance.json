@@ -1,6 +1,6 @@
 {
   "accentColor": "",
-  "theme": "moonstone",
+  "theme": "system",
   "cssTheme": "Obsidianotion",
   "monospaceFontFamily": "JetBrains Mono NL",
   "nativeMenus": true,
@@ -8,5 +8,6 @@
   "enabledCssSnippets": [
     "link-formatting"
   ],
-  "textFontFamily": "Century Gothic,Calibri"
+  "textFontFamily": "Century Gothic,Calibri",
+  "translucency": false
 }
