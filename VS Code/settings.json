@@ -53,7 +53,7 @@
         "variables": "#333333"
     },
     "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 180,
+    "editor.wordWrapColumn": 200,
     "explorer.openEditors.sortOrder": "alphabetical",
     "files.autoSave": "onFocusChange",
     "files.exclude": {
@@ -66,6 +66,7 @@
     "git.autofetch": true,
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
+    "git.openRepositoryInParentFolders": "always",
     "github.copilot-labs.showTestGenerationLenses": true,
     "github.copilot.enable": {
         "*": true,
@@ -144,6 +145,7 @@
     "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
     "markdown.extension.orderedList.autoRenumber": false,
     "markdown.extension.orderedList.marker": "one",
+    "markdown.extension.preview.autoShowPreviewToSide": false,
     "mssql.connections": [
         {
             "authenticationType": "Integrated",
