@@ -1,32 +1,29 @@
 [user]
 	name = Jacob Scherber
-	email = jscherber@microsoft.com
+	email = jgscherber@gmail.com
 
 [core]
 	autocrlf = true
+  editor = code --wait
 
 [diff]
-	tool = semanticmerge
-
-[difftool "semanticdiff"]
-    cmd = C:/Users/jscherber/AppData/Local/semanticmerge/semanticmergetool.exe -s \"$LOCAL\" -d \"$REMOTE\"
+  tool = vscode
 
 [difftool]
 	prompt = false
-[difftool "semanticmerge"]
-	cmd = \"C:\\Users\\jscherber\\AppData\\Local\\semanticmerge\\semanticmergetool.exe\" -s \"$LOCAL\" -d \"$REMOTE\"
-[merge]
-	tool = semanticmerge
-[mergetool "semanticmerge"]
-	cmd = \"C:\\Users\\jscherber\\AppData\\Local\\semanticmerge\\semanticmergetool.exe\" -s \"$LOCAL\" -d \"$REMOTE\" -b \"$BASE\" -r \"$MERGED\"
-	trustexitcode = true
+
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
 [mergetool]
 	prompt = false
 	keepbackup = false
+
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+
 [alias]
 	uncommit = git reset --soft HEAD^
