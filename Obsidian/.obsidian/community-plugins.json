@@ -1,6 +1,8 @@
 [
-  "folder-note-core",
-  "alx-folder-note",
   "highlightr-plugin",
-  "waypoint"
+  "obsidian-code-block-enhancer",
+  "alx-folder-note",
+  "waypoint",
+  "folder-note-core",
+  "duplicate-line"
 ]

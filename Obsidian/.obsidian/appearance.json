@@ -1,13 +1,12 @@
 {
   "accentColor": "",
-  "theme": "system",
+  "baseFontSize": 16,
   "cssTheme": "Obsidianotion",
-  "monospaceFontFamily": "JetBrains Mono NL",
-  "nativeMenus": true,
-  "baseFontSize": 17,
   "enabledCssSnippets": [
     "link-formatting"
   ],
-  "textFontFamily": "Century Gothic,Calibri",
-  "translucency": false
+  "monospaceFontFamily": "JetBrains Mono NL",
+  "nativeMenus": true,
+  "textFontFamily": "Candara,Century Gothic,Calibri",
+  "theme": "moonstone"
 }
