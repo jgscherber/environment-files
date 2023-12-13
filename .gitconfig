@@ -1,3 +1,29 @@
 [user]
 	name = Jacob Scherber
 	email = jgscherber@gmail.com
+
+[core]
+	autocrlf = true
+  editor = code --wait
+
+[diff]
+  tool = vscode
+
+[difftool]
+	prompt = false
+
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+
+[mergetool]
+	prompt = false
+	keepbackup = false
+
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+
+[alias]
+	uncommit = git reset --soft HEAD^
