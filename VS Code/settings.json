@@ -145,7 +145,6 @@
     "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
     "markdown.extension.orderedList.autoRenumber": false,
     "markdown.extension.orderedList.marker": "one",
-    "markdown.extension.preview.autoShowPreviewToSide": false,
     "mssql.connections": [
         {
             "authenticationType": "Integrated",
@@ -160,6 +159,7 @@
             "server": "(localdb)\\OneYubiLocal"
         }
     ],
+    "multiDiffEditor.experimental.enabled": true,
     "nxunitExplorer.nunit": "C:\\Apex\\Workspaces\\Apex_Dev\\3rdParty\\NUnit\\2.5.3",
     "omnisharp.enableRoslynAnalyzers": true,
     "powershell.promptToUpdatePowerShell": false,
@@ -201,7 +201,11 @@
     "workbench.editor.restoreViewState": false,
     "workbench.editor.wrapTabs": true,
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.localHistory.enabled": false,
+    "workbench.localHistory.maxFileEntries": 1,
+    "workbench.localHistory.maxFileSize": 1,
     "workbench.startupEditor": "newUntitledFile",
+    "workbench.tree.enableStickyScroll": true,
     "workbench.tree.indent": 16,
     "workbench.tree.renderIndentGuides": "always"
 }
