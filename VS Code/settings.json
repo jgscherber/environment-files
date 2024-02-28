@@ -207,5 +207,6 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.enableStickyScroll": true,
     "workbench.tree.indent": 16,
-    "workbench.tree.renderIndentGuides": "always"
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.tree.stickyScrollMaxItemCount": 5
 }
