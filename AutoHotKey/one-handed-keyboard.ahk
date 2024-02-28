@@ -102,6 +102,7 @@ space & l::
 space & Enter::
 space & n::
 space & m::
+space & [::
 
 ; Determine the mirror key, if there is one:
 if A_ThisHotkey = space & `;
@@ -114,7 +115,7 @@ else if A_ThisHotkey = space & /
    MirrorKey = z
 else if A_ThisHotkey = space & -
   MirrorKey = ``
-else if A_ThisHotkey = space & Enter
+else if A_ThisHotkey = space & [
   MirrorKey = Tab
 else  ; To avoid runtime errors due to invalid var names, do this part last.
 {
