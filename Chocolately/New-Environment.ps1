@@ -78,24 +78,26 @@ PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
 if (Test-CommandExists "code")
 {
     # Generated using: code --list-extensions | % { "code --install-extension $_" }
+    code --install-extension bierner.markdown-mermaid
+    code --install-extension docsmsft.docs-preview
     code --install-extension dvirtz.parquet-viewer
     code --install-extension eamodio.gitlens
-    code --install-extension GitHub.copilot
-    code --install-extension GitHub.copilot-chat
-    code --install-extension GitHub.copilot-labs
+    code --install-extension george-alisson.html-preview-vscode
+    code --install-extension github.copilot
+    code --install-extension github.copilot-chat
     code --install-extension hediet.vscode-drawio
     code --install-extension janisdd.vscode-edit-csv
     code --install-extension johnpapa.vscode-peacock
     code --install-extension khaeransori.json2csv
-    code --install-extension L13RARY.l13-diff
+    code --install-extension l13rary.l13-diff
     code --install-extension mark-wiemer.vscode-autohotkey-plus-plus
     code --install-extension ms-dotnettools.csharp
     code --install-extension ms-dotnettools.vscode-dotnet-runtime
-    code --install-extension ms-dotnettools.vscodeintellicode-csharp
     code --install-extension ms-mssql.data-workspace-vscode
     code --install-extension ms-mssql.mssql
     code --install-extension ms-mssql.sql-bindings-vscode
     code --install-extension ms-mssql.sql-database-projects-vscode
+    code --install-extension ms-python.debugpy
     code --install-extension ms-python.python
     code --install-extension ms-python.vscode-pylance
     code --install-extension ms-toolsai.jupyter
@@ -103,10 +105,12 @@ if (Test-CommandExists "code")
     code --install-extension ms-toolsai.jupyter-renderers
     code --install-extension ms-toolsai.vscode-jupyter-cell-tags
     code --install-extension ms-toolsai.vscode-jupyter-slideshow
+    code --install-extension ms-vscode-remote.remote-wsl
     code --install-extension ms-vscode.powershell
     code --install-extension msazurermtools.azurerm-vscode-tools
     code --install-extension redhat.vscode-xml
     code --install-extension rosshamish.kuskus-kusto-language-server
     code --install-extension rosshamish.kuskus-kusto-syntax-highlighting
+    code --install-extension sandcastle.vscode-open
     code --install-extension yzhang.markdown-all-in-one
 }
