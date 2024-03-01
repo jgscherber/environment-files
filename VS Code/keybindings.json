@@ -1,3 +1,4 @@
+// Place your key bindings in this file to override the defaultsauto[]
 [
     {
         "command": "workbench.action.showAllSymbols",
@@ -143,9 +144,5 @@
     {
         "command": "workbench.action.showCommands",
         "key": "ctrl+p"
-    },
-    {
-        "command": "-workbench.action.showCommands",
-        "key": "ctrl+shift+p"
     }
 ]
