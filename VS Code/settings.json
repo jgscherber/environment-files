@@ -145,6 +145,7 @@
     "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
     "markdown.extension.orderedList.autoRenumber": false,
     "markdown.extension.orderedList.marker": "one",
+    "markdown.extension.preview.autoShowPreviewToSide": false,
     "mssql.connections": [
         {
             "authenticationType": "Integrated",
@@ -207,5 +208,6 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.enableStickyScroll": true,
     "workbench.tree.indent": 16,
-    "workbench.tree.renderIndentGuides": "always"
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.tree.stickyScrollMaxItemCount": 5
 }
