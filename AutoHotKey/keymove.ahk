@@ -5,8 +5,8 @@ Media_Play_Pause:: ; disable media auto-play
 
 ; 3-finger Middle-click override
 ; https://superuser.com/a/1601645/529867
-<#F22::MButton  ; Left Win + F22
-<#<^F22::MButton  ; Left Win + Left Ctrl + F22
+; <#F22::MButton  ; Left Win + F22
+; <#<^F22::MButton  ; Left Win + Left Ctrl + F22
 
 #if GetKeyState("CapsLock", "P")
     ; Move Keys
