@@ -3,6 +3,7 @@
 $env:Path += ";C:\Program Files\klogg";
 $env:Path += ";D:\Personal\EverythingCLI";
 $env:Path += ";C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin";
+$env:Path += ";C:\Users\jscherber\OneDrive - Microsoft\WorkItems\Tools\Nuget";
 
 $oid = "E:\Source\Repos\Security-OneIdentity";
 $oyb = "E:\Source\Repos\OneYubi\src";
@@ -123,4 +124,10 @@ function gch
 
 # Sudo (priv elevation)
 # https://github.com/gerardog/gsudo
+
+
+function Remove-BuildArtifacts
+{
+    Get-ChildItem -Recurse -Attributes !H | Where-Object { $_.PSIsContainer -and ($_.Name -eq "bin" -or $_.Name -eq "obj" -or $_.Name -eq "packages") } | ForEach-Object{ Write-Host "Deleting folder: $($_.FullName)"; Remove-Item $_.FullName -Recurse -Force; };
+}
 
