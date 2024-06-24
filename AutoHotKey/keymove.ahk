@@ -59,6 +59,8 @@ Media_Play_Pause:: ; disable media auto-play
     *9::Send, {blind}^{PgDn} ; Ctrl-PgDn -- Next tab
     *0::Send, {blind}!{Right} ; Alt-Right -- Forward
 
+    ; Travel Keyboard
+    *2::Send, {blind}{F2} ; F2 - rename
 
     ; Mouse mode
     *3::

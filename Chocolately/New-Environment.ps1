@@ -65,6 +65,7 @@ if ($environment -eq "Home")
 if ($environment -eq "Work")
 {
   choco install dotnetcore-2.1-sdk -y;
+  choco install nodejs -y;
   choco install rdcman -y;
   choco install sql-server-management-studio -y;
   choco install visualstudio2022enterprise -y;
