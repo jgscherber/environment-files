@@ -9,6 +9,7 @@ $oid = "E:\Source\Repos\Security-OneIdentity";
 $oyb = "E:\Source\Repos\OneYubi\src";
 $downloads = "D:\jscherber\OneDrive - Microsoft\Personal\Downloads";
 $desktop = "C:\Users\jscherber\Desktop";
+$hosts = "C:\Windows\System32\drivers\etc\hosts";
 
 Import-Module posh-git;
 
@@ -125,9 +126,25 @@ function gch
 # Sudo (priv elevation)
 # https://github.com/gerardog/gsudo
 
-
-function Remove-BuildArtifacts
-{
-    Get-ChildItem -Recurse -Attributes !H | Where-Object { $_.PSIsContainer -and ($_.Name -eq "bin" -or $_.Name -eq "obj" -or $_.Name -eq "packages") } | ForEach-Object{ Write-Host "Deleting folder: $($_.FullName)"; Remove-Item $_.FullName -Recurse -Force; };
+function Remove-BuildArtifacts {
+    Get-ChildItem -Recurse -Attributes !H | 
+    Where-Object { 
+        $_.PSIsContainer -and (
+            $_.Name -eq "bin" -or 
+            $_.Name -eq "obj" -or 
+            $_.Name -eq "packages" -or 
+            $_.Name -eq ".vs"
+        ) 
+    } | 
+    ForEach-Object { 
+        Write-Host "Deleting folder: $($_.FullName)"
+        Remove-Item $_.FullName -Recurse -Force
+    }
+    # This needs to be done separately because of the hidden attribute filter
+    # -Force is needed to get folders with "hidden" attributes
+    if (Get-Item ".vs" -Force -ErrorAction SilentlyContinue) {
+        Write-Host "Deleting folder: .vs"
+        Remove-Item ".vs" -Recurse -Force
+    }
 }
 
