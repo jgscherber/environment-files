@@ -27,7 +27,7 @@ Media_Play_Pause:: ; disable media auto-play
     *f::Send, {blind}{Esc}
     *u::Send, {blind}{RCtrl down}{RAlt down}{Tab}{RAlt up}{RCtrl up} ; Ctrl+Alt+Tab - switch window
     *~`::Send, {blind}!{F4} ; Alt-F4 (tilde to escape back-tick)
-    *~]::WinSet, AlwaysOnTop, toggle, A ; Pin window to top
+    *]::WinSet, AlwaysOnTop, toggle, A ; Pin window to top
     *[::Send, {blind}^{[} ; Ctrl+[ (back in Notion)
 
     ; Windows
