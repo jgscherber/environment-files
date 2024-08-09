@@ -92,8 +92,10 @@ if (Test-CommandExists "code")
     code --install-extension khaeransori.json2csv
     code --install-extension l13rary.l13-diff
     code --install-extension mark-wiemer.vscode-autohotkey-plus-plus
+    code --install-extension ms-dotnettools.csdevkit
     code --install-extension ms-dotnettools.csharp
     code --install-extension ms-dotnettools.vscode-dotnet-runtime
+    code --install-extension ms-dotnettools.vscodeintellicode-csharp
     code --install-extension ms-mssql.data-workspace-vscode
     code --install-extension ms-mssql.mssql
     code --install-extension ms-mssql.sql-bindings-vscode
@@ -101,6 +103,7 @@ if (Test-CommandExists "code")
     code --install-extension ms-python.debugpy
     code --install-extension ms-python.python
     code --install-extension ms-python.vscode-pylance
+    code --install-extension ms-sarifvscode.sarif-viewer
     code --install-extension ms-toolsai.jupyter
     code --install-extension ms-toolsai.jupyter-keymap
     code --install-extension ms-toolsai.jupyter-renderers
