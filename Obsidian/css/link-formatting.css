@@ -1,8 +1,12 @@
 /********************* Links *********************/
 
-.cm-hmd-internal-link {
+.cm-hmd-internal-link > a {
     /* Your styles for wiki links here */
     color: black !important;
+}
+
+a {
+    text-underline-offset: 22% !important;
 }
 
 /********************* Headers *********************/
