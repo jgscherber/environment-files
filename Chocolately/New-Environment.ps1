@@ -78,8 +78,9 @@ PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
 # VS Code
 if (Test-CommandExists "code")
 {
-    # Generated using: code --list-extensions | % { "code --install-extension $_" }
+    # Generated using: code --list-extensions | ForEach-Object { "code --install-extension $_" }
     code --install-extension bierner.markdown-mermaid
+    code --install-extension davidanson.vscode-markdownlint
     code --install-extension docsmsft.docs-preview
     code --install-extension dvirtz.parquet-viewer
     code --install-extension eamodio.gitlens
@@ -113,8 +114,12 @@ if (Test-CommandExists "code")
     code --install-extension ms-vscode.powershell
     code --install-extension msazurermtools.azurerm-vscode-tools
     code --install-extension redhat.vscode-xml
+    code --install-extension redhat.vscode-yaml
     code --install-extension rosshamish.kuskus-kusto-language-server
     code --install-extension rosshamish.kuskus-kusto-syntax-highlighting
     code --install-extension sandcastle.vscode-open
     code --install-extension yzhang.markdown-all-in-one
+}
+else {
+    Write-Host "--- VSCODE NOT INSTALLED SO SKIPPING INSTALLING EXTENSIONS ---"
 }
