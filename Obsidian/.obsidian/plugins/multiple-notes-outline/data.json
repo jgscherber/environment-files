@@ -1,0 +1,147 @@
+{
+  "autoupdateFileView": true,
+  "suspendUpdateByClickingView": true,
+  "autoupdateFolderView": false,
+  "showFiles": {
+    "main": true,
+    "outgoing": false,
+    "backlink": false
+  },
+  "showElements": {
+    "heading": true,
+    "link": false,
+    "tag": false,
+    "listItems": false,
+    "task": true
+  },
+  "maxHeadingLevel": 6,
+  "hideLinksBetweenRelatedFiles": "none",
+  "allRootItems": false,
+  "allTasks": true,
+  "taskOnly": false,
+  "hideCompletedTasks": false,
+  "displayFileInfo": "lines",
+  "viewPosition": "right",
+  "inlinePreview": true,
+  "tooltipPreview": false,
+  "tooltipPreviewDirection": "left",
+  "wordsToExtract": "",
+  "icon": {
+    "heading": "headingwithnumber",
+    "link": "link",
+    "tag": "tag",
+    "listItems": "list",
+    "note": "file",
+    "task": "square",
+    "taskDone": "check-square",
+    "backlink": "links-coming-in"
+  },
+  "customIcon": {
+    "heading": "hash",
+    "link": "link",
+    "tag": "tag",
+    "listItems": "list",
+    "note": "file",
+    "task": "square",
+    "taskDone": "check-square",
+    "backlink": "links-coming-in"
+  },
+  "indent": {
+    "heading": true,
+    "link": true,
+    "tag": true,
+    "listItems": true
+  },
+  "indentFollowHeading": 2,
+  "prefix": {
+    "heading": ": ",
+    "link": "",
+    "tag": "",
+    "listItems": "",
+    "task": "",
+    "taskDone": "",
+    "backlink": ""
+  },
+  "repeatHeadingPrefix": "none",
+  "addCheckboxText": false,
+  "hideDuplicated": true,
+  "readLimit": 50,
+  "processLimit": 100,
+  "noteTitleBackgroundColor": "accent",
+  "customNoteTitleBackgroundColor": {
+    "light": "#BEBEBE",
+    "dark": "#4E4E4E"
+  },
+  "customNoteTitleBackgroundColorHover": {
+    "light": "#AEAEAE",
+    "dark": "#5E5E5E"
+  },
+  "tagsAOT": [],
+  "showBacklinks": false,
+  "relatedFiles": {},
+  "openAtStartup": {
+    "file": false,
+    "folder": false
+  },
+  "collapseFolder": true,
+  "sortType": "alphabetAscending",
+  "showDebugInfo": false,
+  "collapseAllAtStartup": false,
+  "showPropertyLinks": true,
+  "recent": {
+    "file": [
+      "OneIdentity/OneIdentity Features/MPA (Microsoft Production Accounts) Domain/Create non-JIT JIT groups.md",
+      "OneIdentity/Migrate to 1P Image and Enable Trusted Launch.md",
+      "OneIdentity/Cloud-group member missing in Mooncake.md",
+      "OneIdentity/OneIdentity Features/MPA (Microsoft Production Accounts) Domain/SOA (Source of Authority).md",
+      "OneIdentity/OneIdentity Features/MPA (Microsoft Production Accounts) Domain/MPA (Microsoft Production Accounts) Domain.md",
+      "OneIdentity/OneIdentity Features/MPA (Microsoft Production Accounts) Domain/GME User Migration.md",
+      "People/Jon Rowlett.md",
+      "Microsoft/DSTS.md",
+      "Bugs/MeoSendEmailFailureProd - 21v account in expiring.md",
+      "OneIdentity/Identity Pass.md",
+      "Microsoft/Audit (SOX, SOC).md",
+      "People/Eric Bentley.md",
+      "People/Allison Shubert.md",
+      "People/Matt Lopez.md",
+      "OneIdentity/Bring Your Own Domain (BYOD).md",
+      "Incidents/Automatic OS Image Updates and VMSS CustomScriptExtension.md",
+      "Incidents/Standardize Single VMs on VMSS Flex with Auto OS Upgrades enabled (create new domain controller).md",
+      "OneIdentity/SFI SSIRP/Migrate to PME & GME to AME Multitenant application (Spring Grove).md",
+      "OneIdentity/MSSTORE BYOD Onboarding.md",
+      "Bugs/Windows Server 2022 Update/CME AD Agent VMSS Update.md",
+      "Microsoft/Azure DevOps (ADO).md",
+      "IDM-Torus/IDM Command Line (CLI) cheat sheet.md",
+      "OneIdentity/OneIdentity CIS Resource Provider (RP).md",
+      "IDM-Torus/Incidents/2024-10-01 -- ApprovedVendorsSyncJob_Prod_O365ServiceAuth_Failure is unhealthy..md",
+      "IDM-Torus/Incidents/2024-12-20 -- US and CA Background checks.md",
+      "IDM-Torus/Incidents/2024-10-08 -- Access denied to Torus account.md",
+      "OneIdentity/Team Signals.md",
+      "Microsoft/SAW/SAW (Secure Access Workstation).md",
+      "Incidents/SFI-AR1.2.1 -- Enable VMSS Auto Image Patching.md",
+      "Production Tenant Management/Prod Tenant Identity group meeting.md"
+    ],
+    "folder": []
+  },
+  "favorite": {
+    "file": [],
+    "folder": []
+  },
+  "numOfRecentFiles": 30,
+  "pinAfterJump": true,
+  "openRecentAtStartup": {
+    "file": false,
+    "folder": false
+  },
+  "popoutSize": {
+    "width": 600,
+    "height": 800
+  },
+  "popoutAlwaysOnTop": false,
+  "openLinkByClick": false,
+  "hideMinor2hopLink": false,
+  "dispListCallouts": true,
+  "saveRecentView": true,
+  "wrapLine": false,
+  "bootDelayTime": 300
+}

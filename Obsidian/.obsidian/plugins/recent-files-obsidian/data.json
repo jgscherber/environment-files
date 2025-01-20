@@ -1,0 +1,207 @@
+{
+  "recentFiles": [
+    {
+      "basename": "Create non-JIT JIT groups",
+      "path": "OneIdentity/OneIdentity Features/MPA (Microsoft Production Accounts) Domain/Create non-JIT JIT groups.md"
+    },
+    {
+      "basename": "Migrate to 1P Image and Enable Trusted Launch",
+      "path": "OneIdentity/Migrate to 1P Image and Enable Trusted Launch.md"
+    },
+    {
+      "basename": "Cloud-group member missing in Mooncake",
+      "path": "OneIdentity/Cloud-group member missing in Mooncake.md"
+    },
+    {
+      "basename": "SOA (Source of Authority)",
+      "path": "OneIdentity/OneIdentity Features/MPA (Microsoft Production Accounts) Domain/SOA (Source of Authority).md"
+    },
+    {
+      "basename": "MPA (Microsoft Production Accounts) Domain",
+      "path": "OneIdentity/OneIdentity Features/MPA (Microsoft Production Accounts) Domain/MPA (Microsoft Production Accounts) Domain.md"
+    },
+    {
+      "basename": "GME User Migration",
+      "path": "OneIdentity/OneIdentity Features/MPA (Microsoft Production Accounts) Domain/GME User Migration.md"
+    },
+    {
+      "basename": "Jon Rowlett",
+      "path": "People/Jon Rowlett.md"
+    },
+    {
+      "basename": "DSTS",
+      "path": "Microsoft/DSTS.md"
+    },
+    {
+      "basename": "MeoSendEmailFailureProd - 21v account in expiring",
+      "path": "Bugs/MeoSendEmailFailureProd - 21v account in expiring.md"
+    },
+    {
+      "basename": "Identity Pass",
+      "path": "OneIdentity/Identity Pass.md"
+    },
+    {
+      "basename": "Audit (SOX, SOC)",
+      "path": "Microsoft/Audit (SOX, SOC).md"
+    },
+    {
+      "basename": "Eric Bentley",
+      "path": "People/Eric Bentley.md"
+    },
+    {
+      "basename": "Allison Shubert",
+      "path": "People/Allison Shubert.md"
+    },
+    {
+      "basename": "Matt Lopez",
+      "path": "People/Matt Lopez.md"
+    },
+    {
+      "basename": "Bring Your Own Domain (BYOD)",
+      "path": "OneIdentity/Bring Your Own Domain (BYOD).md"
+    },
+    {
+      "basename": "Automatic OS Image Updates and VMSS CustomScriptExtension",
+      "path": "Incidents/Automatic OS Image Updates and VMSS CustomScriptExtension.md"
+    },
+    {
+      "basename": "Standardize Single VMs on VMSS Flex with Auto OS Upgrades enabled (create new domain controller)",
+      "path": "Incidents/Standardize Single VMs on VMSS Flex with Auto OS Upgrades enabled (create new domain controller).md"
+    },
+    {
+      "basename": "Migrate to PME & GME to AME Multitenant application (Spring Grove)",
+      "path": "OneIdentity/SFI SSIRP/Migrate to PME & GME to AME Multitenant application (Spring Grove).md"
+    },
+    {
+      "basename": "MSSTORE BYOD Onboarding",
+      "path": "OneIdentity/MSSTORE BYOD Onboarding.md"
+    },
+    {
+      "basename": "CME AD Agent VMSS Update",
+      "path": "Bugs/Windows Server 2022 Update/CME AD Agent VMSS Update.md"
+    },
+    {
+      "basename": "Azure DevOps (ADO)",
+      "path": "Microsoft/Azure DevOps (ADO).md"
+    },
+    {
+      "basename": "IDM Command Line (CLI) cheat sheet",
+      "path": "IDM-Torus/IDM Command Line (CLI) cheat sheet.md"
+    },
+    {
+      "basename": "OneIdentity CIS Resource Provider (RP)",
+      "path": "OneIdentity/OneIdentity CIS Resource Provider (RP).md"
+    },
+    {
+      "basename": "2024-10-01 -- ApprovedVendorsSyncJob_Prod_O365ServiceAuth_Failure is unhealthy.",
+      "path": "IDM-Torus/Incidents/2024-10-01 -- ApprovedVendorsSyncJob_Prod_O365ServiceAuth_Failure is unhealthy..md"
+    },
+    {
+      "basename": "2024-12-20 -- US and CA Background checks",
+      "path": "IDM-Torus/Incidents/2024-12-20 -- US and CA Background checks.md"
+    },
+    {
+      "basename": "2024-10-08 -- Access denied to Torus account",
+      "path": "IDM-Torus/Incidents/2024-10-08 -- Access denied to Torus account.md"
+    },
+    {
+      "basename": "Team Signals",
+      "path": "OneIdentity/Team Signals.md"
+    },
+    {
+      "basename": "SAW (Secure Access Workstation)",
+      "path": "Microsoft/SAW/SAW (Secure Access Workstation).md"
+    },
+    {
+      "basename": "SFI-AR1.2.1 -- Enable VMSS Auto Image Patching",
+      "path": "Incidents/SFI-AR1.2.1 -- Enable VMSS Auto Image Patching.md"
+    },
+    {
+      "basename": "Prod Tenant Identity group meeting",
+      "path": "Production Tenant Management/Prod Tenant Identity group meeting.md"
+    },
+    {
+      "basename": "OneIdentity Team",
+      "path": "OneIdentity/OneIdentity Team.md"
+    },
+    {
+      "basename": "2024-09-03 -- Large number of cloud request from testwim.windows.net",
+      "path": "OneIdentity/SFI SSIRP/2024-09-03 -- Large number of cloud request from testwim.windows.net.md"
+    },
+    {
+      "basename": "KQL queries",
+      "path": "OneIdentity/OneIdentity Features/SDK-style CSPROJ Migrations/KQL queries.md"
+    },
+    {
+      "basename": "Deployments",
+      "path": "Microsoft/Deployments.md"
+    },
+    {
+      "basename": "RDCMan",
+      "path": "Microsoft/RDCMan.md"
+    },
+    {
+      "basename": "GME Group Migration",
+      "path": "OneIdentity/OneIdentity Features/MPA (Microsoft Production Accounts) Domain/GME Group Migration.md"
+    },
+    {
+      "basename": "2024-12-16 -- 24h minimum successful automation tasks",
+      "path": "OneIdentity/SFI SSIRP/2024-12-16 -- 24h minimum successful automation tasks.md"
+    },
+    {
+      "basename": "500 Server error response on Group Validate",
+      "path": "Bugs/500 Server error response on Group Validate.md"
+    },
+    {
+      "basename": "Talat Ahmed",
+      "path": "People/Talat Ahmed.md"
+    },
+    {
+      "basename": "Jimmy Larson",
+      "path": "People/Jimmy Larson.md"
+    },
+    {
+      "basename": "Smart card renewal",
+      "path": "OneIdentity/Smart card renewal.md"
+    },
+    {
+      "basename": "IDM-OneIdentity Integration",
+      "path": "IDM-Torus/IDM-OneIdentity Integration.md"
+    },
+    {
+      "basename": "Yanning Tan",
+      "path": "People/Yanning Tan.md"
+    },
+    {
+      "basename": "Incident Management (IcM)",
+      "path": "Microsoft/Incident Management (IcM).md"
+    },
+    {
+      "basename": "OneCert certificate lockdown (AME vs. CORP)",
+      "path": "Microsoft/OneCert certificate lockdown (AME vs. CORP).md"
+    },
+    {
+      "basename": "JIT Secure Access (Azure JIT)",
+      "path": "Microsoft/JIT Secure Access (Azure JIT).md"
+    },
+    {
+      "basename": "JIT Elevation Length SOP",
+      "path": "OneIdentity/JIT Elevation Length SOP/JIT Elevation Length SOP.md"
+    },
+    {
+      "basename": "Recreate PPE IDMDOMAIN Domain Controller",
+      "path": "OneIdentity/Recreate PPE IDMDOMAIN Domain Controller.md"
+    },
+    {
+      "basename": "scottgu email issue",
+      "path": "OneIdentity/scottgu email issue.md"
+    },
+    {
+      "basename": "1P Apps (First-Party)",
+      "path": "Microsoft/1P Apps (First-Party).md"
+    }
+  ],
+  "omittedPaths": [],
+  "maxLength": null,
+  "openType": "tab"
+}

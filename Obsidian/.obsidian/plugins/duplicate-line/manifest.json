@@ -1,0 +1,10 @@
+{
+	"id": "duplicate-line",
+	"name": "Duplicate Line",
+	"version": "3.1.1",
+	"minAppVersion": "0.15.9",
+	"description": "Duplicate Line(s) Up Down, duplicate selection Up Down, right, left. Support Multicursor",
+	"author": "1C0D",
+	"authorUrl": "https://github.com/1C0D/duplicate-line",
+	"isDesktopOnly": false
+}
