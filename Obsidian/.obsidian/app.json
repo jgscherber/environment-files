@@ -3,7 +3,7 @@
   "readableLineLength": false,
   "showIndentGuide": false,
   "useTab": true,
-  "spellcheck": false,
+  "spellcheck": true,
   "newFileLocation": "current",
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "zzAttachments",
@@ -13,35 +13,14 @@
     "includeName": true,
     "pageSize": "Letter",
     "landscape": false,
-    "margin": "0",
-    "downscalePercent": 100
+    "margin": "2",
+    "downscalePercent": 52
   },
   "userIgnoreFilters": [
-    "zzAttachments/"
+    "zzAttachments/",
+    "zzTemplates/",
+    "zzHidden/"
   ],
-  "strictLineBreaks": false,
-  "mobilePullAction": "switcher:open",
-  "mobileToolbarCommands": [
-    "command-palette:open",
-    "editor:insert-wikilink",
-    "editor:insert-embed",
-    "editor:insert-tag",
-    "editor:attach-file",
-    "editor:toggle-bold",
-    "editor:toggle-italics",
-    "editor:toggle-strikethrough",
-    "editor:toggle-code",
-    "editor:toggle-blockquote",
-    "editor:insert-link",
-    "editor:swap-line-up",
-    "editor:swap-line-down",
-    "editor:toggle-bullet-list",
-    "editor:toggle-numbered-list",
-    "editor:indent-list",
-    "editor:unindent-list",
-    "editor:undo",
-    "editor:redo",
-    "outline:open",
-    "editor:configure-toolbar"
-  ]
+  "trashOption": "local",
+  "showLineNumber": false
 }

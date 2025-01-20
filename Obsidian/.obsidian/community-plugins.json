@@ -1,8 +1,24 @@
 [
   "highlightr-plugin",
-  "obsidian-code-block-enhancer",
-  "alx-folder-note",
-  "waypoint",
   "folder-note-core",
-  "duplicate-line"
+  "duplicate-line",
+  "copy-as-html",
+  "obsidian-smart-typography",
+  "obsidian-git",
+  "copy-url-in-preview",
+  "folder-note-plugin",
+  "file-explorer-plus",
+  "settings-search",
+  "recent-files-obsidian",
+  "obsidian-plugin-update-tracker",
+  "note-refactor-obsidian",
+  "templater-obsidian",
+  "oin-gotoheading",
+  "obsidian-file-link",
+  "code-styler",
+  "obsidian-copy-block-link",
+  "obsidian-sort-and-permute-lines",
+  "omnisearch",
+  "multiple-notes-outline",
+  "github-copilot"
 ]

@@ -4,9 +4,9 @@
   "switcher": true,
   "graph": true,
   "backlink": true,
-  "canvas": true,
+  "canvas": false,
   "outgoing-link": true,
-  "tag-pane": false,
+  "tag-pane": true,
   "page-preview": true,
   "daily-notes": false,
   "templates": true,
@@ -23,9 +23,9 @@
   "slides": false,
   "audio-recorder": false,
   "workspaces": false,
-  "file-recovery": true,
+  "file-recovery": false,
   "publish": false,
   "sync": false,
-  "bookmarks": true,
+  "bookmarks": false,
   "properties": true
 }
