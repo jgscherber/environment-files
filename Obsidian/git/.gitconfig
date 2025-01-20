@@ -1,0 +1,3 @@
+[core]
+    # Obsidian always uses LF
+    autocrlf = false

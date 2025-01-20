@@ -1,0 +1,11 @@
+# OR only to exclude workspace cache
+.obsidian/workspace.json
+.obsidian/plugins/recent-files-obsidian/data.json
+
+# to exclude workspace cache specific to mobile devices
+.obsidian/workspace-mobile.json
+conflict-files-obsidian-git.md
+
+# Add below lines to exclude OS settings and caches
+.trash/
+.DS_Store
