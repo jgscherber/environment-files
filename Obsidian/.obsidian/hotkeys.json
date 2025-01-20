@@ -1,216 +1,216 @@
 {
-  "global-search:open": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "F"
-    }
-  ],
-  "switcher:open": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "O"
-    }
-  ],
-  "workspace:new-tab": [],
-  "command-palette:open": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "P"
-    }
-  ],
-  "app:go-back": [
-    {
-      "modifiers": [
-        "Mod",
-        "Alt"
-      ],
-      "key": "ArrowLeft"
-    },
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "ArrowLeft"
-    }
-  ],
-  "app:go-forward": [
-    {
-      "modifiers": [
-        "Mod",
-        "Alt"
-      ],
-      "key": "ArrowRight"
-    },
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "ArrowRight"
-    }
-  ],
-  "duplicate-line:duplicate-line": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "D"
-    }
-  ],
-  "editor:delete-paragraph": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "L"
-    }
-  ],
-  "duplicate-line:select-next-occurence": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "."
-    }
-  ],
-  "copy-as-html:copy-as-html-command": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "C"
-    }
-  ],
-  "editor:toggle-code": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "E"
-    }
-  ],
-  "markdown:toggle-preview": [],
-  "editor:add-cursor-above": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "ArrowUp"
-    }
-  ],
-  "editor:add-cursor-below": [
-    {
-      "modifiers": [
-        "Alt",
-        "Shift"
-      ],
-      "key": "ArrowDown"
-    }
-  ],
-  "editor:toggle-highlight": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "H"
-    }
-  ],
-  "obsidian-git:push": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "S"
-    }
-  ],
-  "editor:swap-line-up": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "ArrowUp"
-    }
-  ],
-  "editor:swap-line-down": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "ArrowDown"
-    }
-  ],
-  "window:zoom-in": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "="
-    }
-  ],
-  "window:zoom-out": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "-"
-    }
-  ],
-  "file-explorer:new-file-in-new-pane": [],
-  "note-refactor-obsidian:app:extract-selection-first-line": [],
-  "note-refactor-obsidian:app:extract-selection-content-only": [],
-  "oin-gotoheading:gotoheading-switcher": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "Y"
-    }
-  ],
-  "editor:insert-callout": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "."
-    }
-  ],
-  "editor:toggle-source": [
-    {
-      "modifiers": [],
-      "key": "F12"
-    }
-  ],
-  "file-explorer:new-file": [],
-  "file-explorer:new-file-in-current-tab": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "N"
-    }
-  ],
-  "omnisearch:show-modal": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "T"
-    }
-  ]
+    "app:go-back": [
+        {
+            "key": "ArrowLeft",
+            "modifiers": [
+                "Mod",
+                "Alt"
+            ]
+        },
+        {
+            "key": "ArrowLeft",
+            "modifiers": [
+                "Alt"
+            ]
+        }
+    ],
+    "app:go-forward": [
+        {
+            "key": "ArrowRight",
+            "modifiers": [
+                "Mod",
+                "Alt"
+            ]
+        },
+        {
+            "key": "ArrowRight",
+            "modifiers": [
+                "Alt"
+            ]
+        }
+    ],
+    "command-palette:open": [
+        {
+            "key": "P",
+            "modifiers": [
+                "Mod"
+            ]
+        }
+    ],
+    "copy-as-html:copy-as-html-command": [
+        {
+            "key": "C",
+            "modifiers": [
+                "Mod",
+                "Shift"
+            ]
+        }
+    ],
+    "duplicate-line:duplicate-line": [
+        {
+            "key": "D",
+            "modifiers": [
+                "Mod"
+            ]
+        }
+    ],
+    "duplicate-line:select-next-occurence": [
+        {
+            "key": ".",
+            "modifiers": [
+                "Alt",
+                "Shift"
+            ]
+        }
+    ],
+    "editor:add-cursor-above": [
+        {
+            "key": "ArrowUp",
+            "modifiers": [
+                "Alt",
+                "Shift"
+            ]
+        }
+    ],
+    "editor:add-cursor-below": [
+        {
+            "key": "ArrowDown",
+            "modifiers": [
+                "Alt",
+                "Shift"
+            ]
+        }
+    ],
+    "editor:delete-paragraph": [
+        {
+            "key": "L",
+            "modifiers": [
+                "Mod",
+                "Shift"
+            ]
+        }
+    ],
+    "editor:insert-callout": [
+        {
+            "key": ".",
+            "modifiers": [
+                "Mod",
+                "Shift"
+            ]
+        }
+    ],
+    "editor:swap-line-down": [
+        {
+            "key": "ArrowDown",
+            "modifiers": [
+                "Mod",
+                "Shift"
+            ]
+        }
+    ],
+    "editor:swap-line-up": [
+        {
+            "key": "ArrowUp",
+            "modifiers": [
+                "Mod",
+                "Shift"
+            ]
+        }
+    ],
+    "editor:toggle-code": [
+        {
+            "key": "E",
+            "modifiers": [
+                "Mod"
+            ]
+        }
+    ],
+    "editor:toggle-highlight": [
+        {
+            "key": "H",
+            "modifiers": [
+                "Alt",
+                "Mod"
+            ]
+        }
+    ],
+    "editor:toggle-source": [
+        {
+            "key": "F12",
+            "modifiers": []
+        }
+    ],
+    "file-explorer:new-file": [],
+    "file-explorer:new-file-in-current-tab": [
+        {
+            "key": "N",
+            "modifiers": [
+                "Mod",
+                "Shift"
+            ]
+        }
+    ],
+    "file-explorer:new-file-in-new-pane": [],
+    "global-search:open": [
+        {
+            "key": "F",
+            "modifiers": [
+                "Mod",
+                "Shift"
+            ]
+        }
+    ],
+    "markdown:toggle-preview": [],
+    "note-refactor-obsidian:app:extract-selection-content-only": [],
+    "note-refactor-obsidian:app:extract-selection-first-line": [],
+    "obsidian-git:push": [
+        {
+            "key": "S",
+            "modifiers": [
+                "Mod",
+                "Shift"
+            ]
+        }
+    ],
+    "oin-gotoheading:gotoheading-switcher": [
+        {
+            "key": "Y",
+            "modifiers": [
+                "Alt"
+            ]
+        }
+    ],
+    "omnisearch:show-modal": [
+        {
+            "key": "T",
+            "modifiers": [
+                "Mod"
+            ]
+        }
+    ],
+    "switcher:open": [
+        {
+            "key": "O",
+            "modifiers": [
+                "Mod"
+            ]
+        }
+    ],
+    "window:zoom-in": [
+        {
+            "key": "=",
+            "modifiers": [
+                "Mod"
+            ]
+        }
+    ],
+    "window:zoom-out": [
+        {
+            "key": "-",
+            "modifiers": [
+                "Mod"
+            ]
+        }
+    ],
+    "workspace:new-tab": []
 }

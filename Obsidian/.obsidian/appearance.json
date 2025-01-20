@@ -1,14 +1,14 @@
 {
-  "accentColor": "#b11010",
-  "theme": "moonstone",
-  "cssTheme": "",
-  "monospaceFontFamily": "JetBrains Mono NL",
-  "nativeMenus": true,
-  "baseFontSize": 18,
-  "enabledCssSnippets": [
-    "link-formatting",
-    "mermaid"
-  ],
-  "textFontFamily": "Dubai,Candara,Century Gothic,Calibri",
-  "baseFontSizeAction": true
+    "accentColor": "#b11010",
+    "baseFontSize": 18,
+    "baseFontSizeAction": true,
+    "cssTheme": "",
+    "enabledCssSnippets": [
+        "link-formatting",
+        "mermaid"
+    ],
+    "monospaceFontFamily": "JetBrains Mono NL",
+    "nativeMenus": true,
+    "textFontFamily": "Dubai,Candara,Century Gothic,Calibri",
+    "theme": "moonstone"
 }

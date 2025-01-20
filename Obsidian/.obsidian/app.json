@@ -1,26 +1,26 @@
 {
-  "showInlineTitle": true,
-  "readableLineLength": false,
-  "showIndentGuide": false,
-  "useTab": true,
-  "spellcheck": true,
-  "newFileLocation": "current",
-  "showUnsupportedFiles": true,
-  "attachmentFolderPath": "zzAttachments",
-  "alwaysUpdateLinks": true,
-  "tabSize": 6,
-  "pdfExportSettings": {
-    "includeName": true,
-    "pageSize": "Letter",
-    "landscape": false,
-    "margin": "2",
-    "downscalePercent": 52
-  },
-  "userIgnoreFilters": [
-    "zzAttachments/",
-    "zzTemplates/",
-    "zzHidden/"
-  ],
-  "trashOption": "local",
-  "showLineNumber": false
+    "alwaysUpdateLinks": true,
+    "attachmentFolderPath": "zzAttachments",
+    "newFileLocation": "current",
+    "pdfExportSettings": {
+        "downscalePercent": 52,
+        "includeName": true,
+        "landscape": false,
+        "margin": "2",
+        "pageSize": "Letter"
+    },
+    "readableLineLength": false,
+    "showIndentGuide": false,
+    "showInlineTitle": true,
+    "showLineNumber": false,
+    "showUnsupportedFiles": true,
+    "spellcheck": true,
+    "tabSize": 6,
+    "trashOption": "local",
+    "userIgnoreFilters": [
+        "zzAttachments/",
+        "zzTemplates/",
+        "zzHidden/"
+    ],
+    "useTab": true
 }
