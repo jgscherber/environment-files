@@ -6,7 +6,8 @@ $StartUpCommands = @(
     "& 'C:\Program Files\Ditto\Ditto.exe'",
     "& 'C:\Program Files\Mozilla Firefox\firefox.exe'",
     "& 'explorer.exe'"
-    "& '$localAppData\Programs\Notion\Notion.exe'"
+    "& '$localAppData\Obsidian\Obsidian.exe"
+    # "& '$localAppData\Programs\Notion\Notion.exe'"
 )
 
 # Create a new event source if it doesn't exist
