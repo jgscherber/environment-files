@@ -2,7 +2,7 @@
 
 $localAppData = [Environment]::GetFolderPath("LocalApplicationData");
 $StartUpCommands = @(
-    "& 'C:\Program Files\AutoHotkey\AutoHotkey.exe' /restart '..\AutoHotKey\keymove.ahk'",
+    "& 'C:\Program Files\AutoHotkey\AutoHotkeyU64_UIA.exe' /restart '..\AutoHotKey\keymove.ahk'",
     "& 'C:\Program Files\Ditto\Ditto.exe'",
     "& 'C:\Program Files\Mozilla Firefox\firefox.exe'",
     "& 'explorer.exe'"

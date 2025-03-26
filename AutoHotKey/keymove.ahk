@@ -1,4 +1,19 @@
+; ____________ Setup ______________
+#NoEnv  ; Don't read environment variables
+#SingleInstance force ; Allow only one instance of this script to run
+
 SetCapsLockState, AlwaysOff
+
+IsOneNoteActive()
+{
+    WinGet, activeProcName, ProcessName, A
+    if (activeProcName = "ONENOTE.EXE")
+        return true
+    else
+        return false
+}
+
+; ____________ Keys ______________
 
 !w::Send ^{Left}+^{Right} ; More general Alt+W
 Media_Play_Pause:: ; disable media auto-play
@@ -12,8 +27,8 @@ Media_Play_Pause:: ; disable media auto-play
     ; Move Keys
     *j::send, {blind}{Left}
     *l::Send, {blind}{Right}
-    *k::Send, {blind}{Down}
-    *i::Send, {blind}{Up}
+    *k::SendPlay, {blind}{Down}
+    *i::SendPlay, {blind}{Up}
     *w::Send, {blind}{PgUp}
     *d::Send, {blind}{End}
     *s::Send, {blind}{PgDn}
@@ -37,7 +52,12 @@ Media_Play_Pause:: ; disable media auto-play
 
     ; VS2019 shortcuts
     *m::Send, {blind}^{F12} ; Ctrl+F12 - goto implementation
-    *t::Send, {blind}^{t} ; Ctrl-T - launch Go To File
+    *t::
+        if (IsOneNoteActive())
+            Send, {blind}^{e} ; Ctrl-E - search in OneNote
+        else
+            Send, {blind}^{t} ; Ctrl-T - launch Go To File
+        return
     *e::Return ; AVAILABLE COMBO
     *r::Send, {blind}^+{p} ; Ctrl-Shift-P - launch Go To Member
     *g::Send, {blind}^{g} ; Ctrl-G - Go to line
