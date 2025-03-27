@@ -27,8 +27,18 @@ Media_Play_Pause:: ; disable media auto-play
     ; Move Keys
     *j::send, {blind}{Left}
     *l::Send, {blind}{Right}
-    *k::SendPlay, {blind}{Down}
-    *i::SendPlay, {blind}{Up}
+    *k::
+        if (IsOneNoteActive())
+            SendPlay, {blind}{Down}
+        else
+            Send, {blind}{Down}
+        return
+    *i::
+        if (IsOneNoteActive())
+            SendPlay, {blind}{Up}
+        else
+            Send, {blind}{Up}
+        return
     *w::Send, {blind}{PgUp}
     *d::Send, {blind}{End}
     *s::Send, {blind}{PgDn}
