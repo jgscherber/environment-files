@@ -60,6 +60,7 @@ if ($environment -eq "Home")
   choco install adobereader -y;
   choco install visualstudio2022community -y;
   choco install vlc -y;
+  choco install thunderbird -y; # For viewing EML files
 }
 
 if ($environment -eq "Work")
