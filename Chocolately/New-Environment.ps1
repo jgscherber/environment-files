@@ -35,13 +35,12 @@ choco install anki -y;
 choco install autohotkey -y;
 choco install chocolateygui -y;
 choco install ditto -y;
-choco install everything --params "/folder-context-menu /run-on-system-startup /client-service" -y;
+# choco install everything --params "/folder-context-menu /run-on-system-startup /client-service" -y; # Blocked by Windows security now :()
 choco install Firefox --params "/NoDesktopShortcut /RemoveDistributionDir" -y;
 choco install git.install -y;
 choco install github-desktop -y;
 choco install jetbrainsmono -y;
 choco install klogg -y;
-choco install notion -y;
 choco install obsidian -y;
 choco install openjdk -y;
 choco install paint.net -y;
@@ -51,7 +50,6 @@ choco install python3 -y;
 choco install remote-desktop-client -y;
 choco install spotify -y;
 choco install vscode -y;
-choco install win-vind -y;
 choco install windirstat -y;
 choco install x-mouse-button-control -y;
 
@@ -69,7 +67,7 @@ if ($environment -eq "Work")
   choco install nodejs -y;
   choco install rdcman -y;
   choco install sql-server-management-studio -y;
-  choco install visualstudio2022enterprise -y;
+#   choco install visualstudio2022enterprise -y; # DevBox usually pre-installs this
 }
 
 ######### Dependent Installs ############
