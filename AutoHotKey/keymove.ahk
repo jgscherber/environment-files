@@ -85,9 +85,9 @@ Media_Play_Pause:: ; disable media auto-play
     ; Web Browser
     *q::Send, {blind}^{w} ; close tab in Chrome and VS2017 (custom bind)
     *7::Send, {blind}!{Left} ; Alt-Left -- Back
-    *8::Send, {blind}^{PgUp} ; Ctrl-PgUp -- Previous tab
-    *9::Send, {blind}^{PgDn} ; Ctrl-PgDn -- Next tab
-    *0::Send, {blind}!{Right} ; Alt-Right -- Forward
+    *8::Send, {blind}!{Right} ; Alt-Right -- Forward
+    *9::Send, {blind}^{PgUp} ; Ctrl-PgUp -- Previous tab
+    *0::Send, {blind}^{PgDn} ; Ctrl-PgDn -- Next tab
 
     ; Travel Keyboard
     *2::Send, {blind}{F2} ; F2 - rename
