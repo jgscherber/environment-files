@@ -35,13 +35,12 @@ choco install anki -y;
 choco install autohotkey -y;
 choco install chocolateygui -y;
 choco install ditto -y;
-choco install everything --params "/folder-context-menu /run-on-system-startup /client-service" -y;
+# choco install everything --params "/folder-context-menu /run-on-system-startup /client-service" -y; # Blocked by Windows security now :()
 choco install Firefox --params "/NoDesktopShortcut /RemoveDistributionDir" -y;
 choco install git.install -y;
 choco install github-desktop -y;
 choco install jetbrainsmono -y;
 choco install klogg -y;
-choco install notion -y;
 choco install obsidian -y;
 choco install openjdk -y;
 choco install paint.net -y;
@@ -51,7 +50,6 @@ choco install python3 -y;
 choco install remote-desktop-client -y;
 choco install spotify -y;
 choco install vscode -y;
-choco install win-vind -y;
 choco install windirstat -y;
 choco install x-mouse-button-control -y;
 
@@ -60,6 +58,7 @@ if ($environment -eq "Home")
   choco install adobereader -y;
   choco install visualstudio2022community -y;
   choco install vlc -y;
+  choco install thunderbird -y; # For viewing EML files
 }
 
 if ($environment -eq "Work")
@@ -68,7 +67,7 @@ if ($environment -eq "Work")
   choco install nodejs -y;
   choco install rdcman -y;
   choco install sql-server-management-studio -y;
-  choco install visualstudio2022enterprise -y;
+#   choco install visualstudio2022enterprise -y; # DevBox usually pre-installs this
 }
 
 ######### Dependent Installs ############
@@ -78,8 +77,9 @@ PowerShellGet\Install-Module posh-git -Scope CurrentUser -Force
 # VS Code
 if (Test-CommandExists "code")
 {
-    # Generated using: code --list-extensions | % { "code --install-extension $_" }
+    # Generated using: code --list-extensions | ForEach-Object { "code --install-extension $_" }
     code --install-extension bierner.markdown-mermaid
+    code --install-extension davidanson.vscode-markdownlint
     code --install-extension docsmsft.docs-preview
     code --install-extension dvirtz.parquet-viewer
     code --install-extension eamodio.gitlens
@@ -113,8 +113,12 @@ if (Test-CommandExists "code")
     code --install-extension ms-vscode.powershell
     code --install-extension msazurermtools.azurerm-vscode-tools
     code --install-extension redhat.vscode-xml
+    code --install-extension redhat.vscode-yaml
     code --install-extension rosshamish.kuskus-kusto-language-server
     code --install-extension rosshamish.kuskus-kusto-syntax-highlighting
     code --install-extension sandcastle.vscode-open
     code --install-extension yzhang.markdown-all-in-one
+}
+else {
+    Write-Host "--- VSCODE NOT INSTALLED SO SKIPPING INSTALLING EXTENSIONS ---"
 }

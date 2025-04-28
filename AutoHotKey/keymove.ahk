@@ -1,4 +1,19 @@
+; ____________ Setup ______________
+#NoEnv  ; Don't read environment variables
+#SingleInstance force ; Allow only one instance of this script to run
+
 SetCapsLockState, AlwaysOff
+
+IsOneNoteActive()
+{
+    WinGet, activeProcName, ProcessName, A
+    if (activeProcName = "ONENOTE.EXE")
+        return true
+    else
+        return false
+}
+
+; ____________ Keys ______________
 
 !w::Send ^{Left}+^{Right} ; More general Alt+W
 Media_Play_Pause:: ; disable media auto-play
@@ -12,8 +27,18 @@ Media_Play_Pause:: ; disable media auto-play
     ; Move Keys
     *j::send, {blind}{Left}
     *l::Send, {blind}{Right}
-    *k::Send, {blind}{Down}
-    *i::Send, {blind}{Up}
+    *k::
+        if (IsOneNoteActive())
+            SendPlay, {blind}{Down}
+        else
+            Send, {blind}{Down}
+        return
+    *i::
+        if (IsOneNoteActive())
+            SendPlay, {blind}{Up}
+        else
+            Send, {blind}{Up}
+        return
     *w::Send, {blind}{PgUp}
     *d::Send, {blind}{End}
     *s::Send, {blind}{PgDn}
@@ -27,7 +52,7 @@ Media_Play_Pause:: ; disable media auto-play
     *f::Send, {blind}{Esc}
     *u::Send, {blind}{RCtrl down}{RAlt down}{Tab}{RAlt up}{RCtrl up} ; Ctrl+Alt+Tab - switch window
     *~`::Send, {blind}!{F4} ; Alt-F4 (tilde to escape back-tick)
-    *~]::WinSet, AlwaysOnTop, toggle, A ; Pin window to top
+    *]::WinSet, AlwaysOnTop, toggle, A ; Pin window to top
     *[::Send, {blind}^{[} ; Ctrl+[ (back in Notion)
 
     ; Windows
@@ -37,7 +62,12 @@ Media_Play_Pause:: ; disable media auto-play
 
     ; VS2019 shortcuts
     *m::Send, {blind}^{F12} ; Ctrl+F12 - goto implementation
-    *t::Send, {blind}^{t} ; Ctrl-T - launch Go To File
+    *t::
+        if (IsOneNoteActive())
+            Send, {blind}^{e} ; Ctrl-E - search in OneNote
+        else
+            Send, {blind}^{t} ; Ctrl-T - launch Go To File
+        return
     *e::Return ; AVAILABLE COMBO
     *r::Send, {blind}^+{p} ; Ctrl-Shift-P - launch Go To Member
     *g::Send, {blind}^{g} ; Ctrl-G - Go to line
@@ -55,9 +85,9 @@ Media_Play_Pause:: ; disable media auto-play
     ; Web Browser
     *q::Send, {blind}^{w} ; close tab in Chrome and VS2017 (custom bind)
     *7::Send, {blind}!{Left} ; Alt-Left -- Back
-    *8::Send, {blind}^{PgUp} ; Ctrl-PgUp -- Previous tab
-    *9::Send, {blind}^{PgDn} ; Ctrl-PgDn -- Next tab
-    *0::Send, {blind}!{Right} ; Alt-Right -- Forward
+    *8::Send, {blind}!{Right} ; Alt-Right -- Forward
+    *9::Send, {blind}^{PgUp} ; Ctrl-PgUp -- Previous tab
+    *0::Send, {blind}^{PgDn} ; Ctrl-PgDn -- Next tab
 
     ; Travel Keyboard
     *2::Send, {blind}{F2} ; F2 - rename

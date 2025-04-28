@@ -1,0 +1,9 @@
+{
+	"id": "oin-gotoheading",
+	"name": "Go To Heading",
+	"version": "0.2.2",
+	"minAppVersion": "1.4.11",
+	"description": "Quickly navigate between headings",
+	"author": "join",
+	"isDesktopOnly": true
+}

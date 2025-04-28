@@ -1,0 +1,22 @@
+rect.activation0 {
+    stroke: #d8d8d8 !important;
+    fill: #f0f0f0 !important;
+}
+
+text.loopText {
+    font-weight: bold !important;
+}
+
+line.loopLine {
+    stroke: #000000b2 !important;
+}
+
+rect.note {
+    stroke: #decc93 !important;
+    fill: #fff9c7 !important;
+}
+
+.actor-line {
+    stroke: grey !important;
+    stroke-dasharray: '2 2' !important;
+}

@@ -1,0 +1,14 @@
+{
+  "addSpaceBetween": false,
+  "lineDown": true,
+  "lineUp": false,
+  "moveRight": false,
+  "moveLeft": false,
+  "selectionRight": false,
+  "selectionLeft": true,
+  "selectionUp": false,
+  "selectionDown": false,
+  "mixRightDown": false,
+  "addNextOcc": true,
+  "selAllOcc": false
+}

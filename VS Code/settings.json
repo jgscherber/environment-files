@@ -10,7 +10,7 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[markdown]": {
-        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
     "[python]": {
         "editor.formatOnType": true
@@ -26,9 +26,11 @@
     },
     "csharp.semanticHighlighting.enabled": true,
     "csharpextensions.privateMemberPrefix": "_",
+    "diffEditor.ignoreTrimWhitespace": true,
     "dotnet.codeLens.enableReferencesCodeLens": false,
     "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
     "editor.accessibilitySupport": "off",
+    "editor.cursorWidth": 2,
     "editor.detectIndentation": false,
     "editor.fontFamily": "'JetBrains Mono NL', Consolas, 'Courier New', monospace",
     "editor.fontLigatures": false,
@@ -200,6 +202,7 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.pinnedTabsOnSeparateRow": true,
     "workbench.editor.restoreViewState": false,
+    "workbench.editor.splitInGroupLayout": "vertical",
     "workbench.editor.wrapTabs": true,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.localHistory.enabled": false,

@@ -1,47 +1,26 @@
 {
-  "showInlineTitle": true,
-  "readableLineLength": false,
-  "showIndentGuide": false,
-  "useTab": true,
-  "spellcheck": false,
-  "newFileLocation": "current",
-  "showUnsupportedFiles": true,
-  "attachmentFolderPath": "zzAttachments",
-  "alwaysUpdateLinks": true,
-  "tabSize": 6,
-  "pdfExportSettings": {
-    "includeName": true,
-    "pageSize": "Letter",
-    "landscape": false,
-    "margin": "0",
-    "downscalePercent": 100
-  },
-  "userIgnoreFilters": [
-    "zzAttachments/"
-  ],
-  "strictLineBreaks": false,
-  "mobilePullAction": "switcher:open",
-  "mobileToolbarCommands": [
-    "command-palette:open",
-    "editor:insert-wikilink",
-    "editor:insert-embed",
-    "editor:insert-tag",
-    "editor:attach-file",
-    "editor:toggle-bold",
-    "editor:toggle-italics",
-    "editor:toggle-strikethrough",
-    "editor:toggle-code",
-    "editor:toggle-blockquote",
-    "editor:insert-link",
-    "editor:swap-line-up",
-    "editor:swap-line-down",
-    "editor:toggle-bullet-list",
-    "editor:toggle-numbered-list",
-    "editor:indent-list",
-    "editor:unindent-list",
-    "editor:undo",
-    "editor:redo",
-    "outline:open",
-    "editor:configure-toolbar"
-  ]
+    "alwaysUpdateLinks": true,
+    "attachmentFolderPath": "zzAttachments",
+    "newFileLocation": "current",
+    "pdfExportSettings": {
+        "downscalePercent": 52,
+        "includeName": true,
+        "landscape": false,
+        "margin": "2",
+        "pageSize": "Letter"
+    },
+    "readableLineLength": false,
+    "showIndentGuide": false,
+    "showInlineTitle": true,
+    "showLineNumber": false,
+    "showUnsupportedFiles": true,
+    "spellcheck": true,
+    "tabSize": 6,
+    "trashOption": "local",
+    "userIgnoreFilters": [
+        "zzAttachments/",
+        "zzTemplates/",
+        "zzHidden/"
+    ],
+    "useTab": true
 }

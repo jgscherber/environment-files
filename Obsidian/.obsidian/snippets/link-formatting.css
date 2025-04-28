@@ -1,25 +1,113 @@
-.cm-hmd-internal-link {
-  /* Your styles for wiki links here */
-  color: black !important;
+/*
+ * All CSS variables are defined on the body element
+/*
+
+/********************* Links *********************/
+
+.cm-hmd-internal-link > a {
+    /* Your styles for wiki links here */
+    color: black !important;
 }
 
-.HyperMD-header-1 {
-  border-bottom: 1px solid lightgrey;
+body {
+    --link-decoration-hover: underline;
+    --text-highlight-bg: rgba(255, 166, 0, 0.5);
+}
+
+a {
+    text-underline-offset: 22% !important;
+}
+
+.cm-url {
+    text-underline-offset: 22% !important;
+}
+
+a:hover {
+    text-underline-offset: 22% !important;
+}
+
+/********************* Headers *********************/
+
+.theme-light {
+    --inline-title-size: 2.7em;
+}
+
+.HyperMD-header-1::after {
+    content: "";
+    border-top: 1px solid lightgrey;
+    min-height: 0.8rem;
+    min-width: 100%;
+    display: block;
 }
 
 .HyperMD-header-3 {
-  color: #444444 !important;
+    color: #444444 !important;
+    font-size: 130% !important;
+}
+
+.HyperMD-header-4 {
+    color: #444444 !important;
+    font-size: 110% !important;
+}
+
+.HyperMD-header-5 {
+    color: #444444 !important;
+    font-size: 100% !important;
+}
+
+/********************* Spacing *********************/
+[class="cm-line"],
+[class="cm-active cm-line"] {
+    padding-bottom: 0.3rem !important;
+}
+
+div.cm-callout,
+div.media-embed {
+    padding-top: 0.6rem !important;
+}
+
+/********************* Code blocks *********************/
+
+.cm-inline-code:not(.cm-formatting) {
+    padding-right: 0.4rem !important;
+    padding-left: 0.4rem !important;
 }
 
 .cm-inline-code {
-  /* Pulled from Notion's CSS via website */
-  background: rgba(135,131,120,.15) !important;
-  color: #EB5757 !important;
-  border-radius: 3px !important;
-  font-size: 85% !important;
+    /* Pulled from Notion's CSS via website */
+    background: rgba(135, 131, 120, .15) !important;
+    color: #EB5757 !important;
+    border-radius: 6% !important;
+    font-size: 75% !important;
+    font-weight: 500 !important; /* default is 400, bold is 700 */
 }
 
-.theme-light
-{
-  --inline-title-size: 2.7em;
+/* Code blocks in headers */
+div[class^="HyperMD-header"] .cm-inline-code {
+    background: rgba(182, 179, 172, 0) !important;
+    color: #000000 !important;
+    border-radius: 0% !important;
+    font-size: 80% !important;
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+    font-weight: 700 !important; /* default is 400, bold is 700 */
 }
+
+.HyperMD-codeblock {
+    font-size: 70% !important;
+    /* white-space: nowrap;
+    overflow-x: scroll; */
+}
+
+/********************* Highlighting *********************/
+
+body {
+    --text-highlight-bg: rgba(247, 247, 0, 0.3);
+}
+
+.markdown-preview-view mark {
+    background: rgba(247, 247, 0, 0.35);
+}
+
+/********************* Mermaid *********************/
+/* See mermaid.css */
