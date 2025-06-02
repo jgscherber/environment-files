@@ -5,49 +5,50 @@ $env:Path += ";D:\Personal\EverythingCLI";
 $env:Path += ";C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin";
 $env:Path += ";C:\Users\jscherber\OneDrive - Microsoft\WorkItems\Tools\Nuget";
 
-$oid = "E:\Source\Repos\Security-OneIdentity";
-$oyb = "E:\Source\Repos\OneYubi\src";
+$oid = "C:\Repos\Security-OneIdentity";
+$oyb = "C:\Repos\OneYubi\src";
 $downloads = "D:\jscherber\OneDrive - Microsoft\Personal\Downloads";
 $desktop = "C:\Users\jscherber\Desktop";
 $hosts = "C:\Windows\System32\drivers\etc\hosts";
 
-Import-Module posh-git;
+$powershellModulePath = "C:\Users\$($env:UserName)\PowerShell\Modules";
+$env:PSModulePath += ";$powershellModulePath";
 
-function Prompt{
-    $max_length = 60;
-    $powershell = 'PS ';
-    $powershell_len = 3;
+# function Prompt{
+#     $max_length = 60;
+#     $powershell = 'PS ';
+#     $powershell_len = 3;
 
-    $prompt = '>'
-    $prompt_len = 1;
+#     $prompt = '>'
+#     $prompt_len = 1;
 
-    # Need -Force to get folders with "hidden" attributes
-    $current = Get-Location | Get-Item -Force;    
-    $full_path = $current.FullName;
-    $path_len = $full_path.Length;
+#     # Need -Force to get folders with "hidden" attributes
+#     $current = Get-Location | Get-Item -Force;    
+#     $full_path = $current.FullName;
+#     $path_len = $full_path.Length;
 
-    $full_len = $powershell_len + $path_len + $prompt_len;
-    if (($full_len -le $max_length)){
-        # We can just use the normal prompt
-        return $powershell + $full_path + $prompt;
-    }
-    else
-    {
-        # We need to truncate
-        $dots = '...'
-        $dots_len = 3;
+#     $full_len = $powershell_len + $path_len + $prompt_len;
+#     if (($full_len -le $max_length)){
+#         # We can just use the normal prompt
+#         return $powershell + $full_path + $prompt;
+#     }
+#     else
+#     {
+#         # We need to truncate
+#         $dots = '...'
+#         $dots_len = 3;
 
-        $root = $current.Root.Name;
-        $root_len = $root.Length;
+#         $root = $current.Root.Name;
+#         $root_len = $root.Length;
 
-        $right_side_len = $max_length - ($powershell_len + $root_len + $dots_len + $prompt_len);
-        $left_side_len = $full_path.Length - $right_side_len;
+#         $right_side_len = $max_length - ($powershell_len + $root_len + $dots_len + $prompt_len);
+#         $left_side_len = $full_path.Length - $right_side_len;
 
-        $right_path = $full_path.Substring($left_side_len);
+#         $right_path = $full_path.Substring($left_side_len);
 
-        return $powershell + $root + $dots + $right_path + $prompt;
-    }
-}
+#         return $powershell + $root + $dots + $right_path + $prompt;
+#     }
+# }
 
 # https://superuser.com/a/810991
 function UnLnk($target)
@@ -60,6 +61,11 @@ function UnLnk($target)
 
 function lsd {
     Get-ChildItem -Attributes D;
+}
+
+function Install-Module {
+    Write-Host "Running Save-Module instead";
+    Save-Module @args -Path $powershellModulePath;
 }
 
 
@@ -104,20 +110,41 @@ function es {
 
 Set-Alias sdiff "C:\Users\jscherber\AppData\Local\semanticmerge\semanticmergetool.exe";
 
-function gitstashstage
+function gstst
 {
     # https://stackoverflow.com/a/59874960
     git stash -- $(git diff --staged --name-only)
 }
 
-function gst
+function gits
 {
     git status
 }
 
-function gch
+function gitch
 {
-    git checkout
+    git checkout 
+}
+
+function gitc
+{
+    git commit -m $args
+}
+
+function gita
+{
+    git add $args
+}
+
+function gitp
+{
+    git push
+}
+
+function gitsyn
+{
+    git fetch origin
+    git pull
 }
 
 # https://www.hanselman.com/blog/spend-less-time-cding-around-directories-with-the-powershell-z-shortcut
@@ -125,6 +152,7 @@ function gch
 
 # Sudo (priv elevation)
 # https://github.com/gerardog/gsudo
+
 
 function Remove-BuildArtifacts {
     Get-ChildItem -Recurse -Attributes !H | 
@@ -148,3 +176,6 @@ function Remove-BuildArtifacts {
     }
 }
 
+# https://ohmyposh.dev/docs/themes
+# Must be last line of the file
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\nu4a.omp.json" | Invoke-Expression
