@@ -65,6 +65,11 @@ function lsd {
 
 function Install-Module {
     Write-Host "Running Save-Module instead";
+    if (-not (Test-Path -Path $powershellModulePath -PathType Container)) {
+        Write-Host "Creating PowerShell module path: $powershellModulePath";
+        New-Item -ItemType Directory -Path $powershellModulePath -Force | Out-Null;
+    }
+    
     Save-Module @args -Path $powershellModulePath;
 }
 

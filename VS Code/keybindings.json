@@ -144,5 +144,25 @@
     {
         "command": "workbench.action.showCommands",
         "key": "ctrl+p"
+    },
+    {
+        "command": "editor.action.moveLinesDownAction",
+        "key": "ctrl+shift+down",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "command": "-editor.action.moveLinesDownAction",
+        "key": "alt+down",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "command": "editor.action.moveLinesUpAction",
+        "key": "ctrl+shift+up",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "command": "-editor.action.moveLinesUpAction",
+        "key": "alt+up",
+        "when": "editorTextFocus && !editorReadonly"
     }
 ]
