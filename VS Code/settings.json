@@ -24,6 +24,18 @@
     "[xml]": {
         "editor.defaultFormatter": "redhat.vscode-xml"
     },
+    "chat.tools.terminal.autoApprove": {
+        "ForEach-Object": true,
+        "Group-Object": true,
+        "Import-Csv": true
+    },
+    "chat.tools.urls.autoApprove": {
+        "https://code.visualstudio.com": true,
+        "https://github.com/microsoft/vscode/wiki/*": true,
+        "https://learn.microsoft.com": true,
+        "https://www.bing.com/search": true,
+        "https://www.google.com/search": true
+    },
     "csharp.semanticHighlighting.enabled": true,
     "csharpextensions.privateMemberPrefix": "_",
     "diffEditor.ignoreTrimWhitespace": true,
@@ -148,20 +160,6 @@
     "markdown.extension.orderedList.autoRenumber": false,
     "markdown.extension.orderedList.marker": "one",
     "markdown.extension.preview.autoShowPreviewToSide": false,
-    "mssql.connections": [
-        {
-            "authenticationType": "Integrated",
-            "database": "",
-            "password": "",
-            "server": "(localdb)\\.\\OneIdentityLocal"
-        },
-        {
-            "authenticationType": "Integrated",
-            "database": "",
-            "password": "",
-            "server": "(localdb)\\OneYubiLocal"
-        }
-    ],
     "multiDiffEditor.experimental.enabled": true,
     "nxunitExplorer.nunit": "C:\\Apex\\Workspaces\\Apex_Dev\\3rdParty\\NUnit\\2.5.3",
     "omnisharp.enableRoslynAnalyzers": true,
@@ -184,6 +182,7 @@
     "todo-tree.tree.scanAtStartup": false,
     "todo-tree.tree.showScanModeButton": false,
     "window.restoreWindows": "none",
+    "window.title": "${dirty}${rootName}${separator}${activeRepositoryBranchName}",
     "window.zoomLevel": -1,
     "workbench.colorCustomizations": {
         "activityBar.background": "#333333",
