@@ -59,7 +59,7 @@ Media_Play_Pause:: ; disable media auto-play
     *,::WinMinimize,A ; Minimize window
     *.::Send, {blind}#{t} ; Win-T - Go to taskbar]
     */::Send, {blind}{AppsKey} ; Right-click menu key.
-    *Tab::Send {blind}}{LWinDown}{Tab}{LWinUp} ; Win+Tab - Task View
+    *Tab::Send, {blind}{LWin down}{Tab}{LWin up} ; Win+Tab - Task View
 
     ; VS2019 shortcuts
     *m::Send, {blind}^{F12} ; Ctrl+F12 - goto implementation
