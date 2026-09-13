@@ -7,6 +7,8 @@
 
 Replace `YOUR_OBSIDIAN_API_KEY` with your actual Obsidian API key. The config is stored in my Windows user profile directory, so the key isn't committed in the repo.
 
+The tools listed are read-only tools.
+
 ```
 copilot mcp add --transport http `
   --header "Authorization: YOUR_OBSIDIAN_API_KEY" `
