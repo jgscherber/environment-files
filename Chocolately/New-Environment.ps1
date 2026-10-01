@@ -31,7 +31,6 @@ if (-not (Test-CommandExists "choco"))
 #### Chocolately ####
 Write-Host "Installing application";
 choco install 7zip.install -y;
-choco install anki -y;
 choco install autohotkey -y;
 choco install chocolateygui -y;
 choco install ditto -y;
@@ -59,6 +58,7 @@ if ($environment -eq "Home")
   choco install visualstudio2022community -y;
   choco install vlc -y;
   choco install thunderbird -y; # For viewing EML files
+  winget install GitHub.Copilot;
 }
 
 if ($environment -eq "Work")
