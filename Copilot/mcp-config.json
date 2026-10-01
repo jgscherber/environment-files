@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "microsoft/playwright-mcp": {
+      "tools": [
+        "*"
+      ],
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp",
+        "--browser",
+        "msedge"
+      ]
+    }
+  }
+}

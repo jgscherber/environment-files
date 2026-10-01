@@ -59,6 +59,7 @@ if ($environment -eq "Home")
   choco install vlc -y;
   choco install thunderbird -y; # For viewing EML files
   winget install GitHub.Copilot;
+  choco install nodejs -y;
 }
 
 if ($environment -eq "Work")
