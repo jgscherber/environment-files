@@ -1,17 +1,18 @@
 {
-  "mcpServers": {
-    "microsoft/playwright-mcp": {
-      "tools": [
-        "*"
-      ],
-      "type": "stdio",
-      "command": "npx",
-      "args": [
-        "-y",
-        "@playwright/mcp",
-        "--browser",
-        "msedge"
-      ]
+    "mcpServers": {
+        "microsoft/playwright-mcp": {
+            "tools": [
+                "*"
+            ],
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "@playwright/mcp",
+                "--extension",
+                "--executable-path",
+                "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+            ]
+        }
     }
-  }
 }

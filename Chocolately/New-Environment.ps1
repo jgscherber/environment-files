@@ -81,7 +81,6 @@ if (Test-CommandExists "code")
     # Generated using: code --list-extensions | ForEach-Object { "code --install-extension $_" }
     code --install-extension bierner.markdown-mermaid
     code --install-extension davidanson.vscode-markdownlint
-    code --install-extension docsmsft.docs-preview
     code --install-extension dvirtz.parquet-viewer
     code --install-extension eamodio.gitlens
     code --install-extension george-alisson.html-preview-vscode
