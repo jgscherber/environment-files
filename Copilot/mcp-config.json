@@ -1,18 +1,39 @@
 {
-    "mcpServers": {
-        "microsoft/playwright-mcp": {
-            "tools": [
-                "*"
-            ],
-            "type": "stdio",
-            "command": "npx",
-            "args": [
-                "-y",
-                "@playwright/mcp",
-                "--extension",
-                "--executable-path",
-                "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
-            ]
-        }
+  "mcpServers": {
+    "browsermcp": {
+      "tools": [
+        "*"
+      ],
+      "command": "npx",
+      "args": [
+        "-y",
+        "@browsermcp/mcp@latest"
+      ]
+    },
+    "exa": {
+      "tools": [
+        "web_search_exa",
+        "web_fetch_exa"
+      ],
+      "type": "http",
+      "url": "https://mcp.exa.ai/mcp"
+    },
+    "semantic-scholar": {
+      "tools": [
+        "*"
+      ],
+      "type": "local",
+      "command": "C:\\Users\\myadminwow\\AppData\\Local\\Microsoft\\WinGet\\Links\\uvx.exe",
+      "args": [
+        "semantic-scholar-fastmcp"
+      ]
+    },
+    "wikidata": {
+      "tools": [
+        "*"
+      ],
+      "type": "http",
+      "url": "https://wd-mcp.wmcloud.org/mcp"
     }
+  }
 }
