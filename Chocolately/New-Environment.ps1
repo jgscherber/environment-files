@@ -92,10 +92,10 @@ if (Test-CommandExists "code")
     code --install-extension khaeransori.json2csv
     code --install-extension l13rary.l13-diff
     code --install-extension mark-wiemer.vscode-autohotkey-plus-plus
+    code --install-extension ms-azuretools.vscode-bicep
     code --install-extension ms-dotnettools.csdevkit
     code --install-extension ms-dotnettools.csharp
     code --install-extension ms-dotnettools.vscode-dotnet-runtime
-    code --install-extension ms-dotnettools.vscodeintellicode-csharp
     code --install-extension ms-mssql.data-workspace-vscode
     code --install-extension ms-mssql.mssql
     code --install-extension ms-mssql.sql-bindings-vscode
@@ -111,7 +111,6 @@ if (Test-CommandExists "code")
     code --install-extension ms-toolsai.vscode-jupyter-slideshow
     code --install-extension ms-vscode-remote.remote-wsl
     code --install-extension ms-vscode.powershell
-    code --install-extension msazurermtools.azurerm-vscode-tools
     code --install-extension redhat.vscode-xml
     code --install-extension redhat.vscode-yaml
     code --install-extension rosshamish.kuskus-kusto-language-server
